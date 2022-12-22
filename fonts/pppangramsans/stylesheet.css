@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'PP Pangram Sans';
+    src: url('PPPangramSans-Medium.eot');
+    src: url('PPPangramSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('PPPangramSans-Medium.woff2') format('woff2'),
+        url('PPPangramSans-Medium.woff') format('woff'),
+        url('PPPangramSans-Medium.ttf') format('truetype'),
+        url('PPPangramSans-Medium.svg#PPPangramSans-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Pangram Sans';
+    src: url('PPPangramSans-Semibold.eot');
+    src: url('PPPangramSans-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('PPPangramSans-Semibold.woff2') format('woff2'),
+        url('PPPangramSans-Semibold.woff') format('woff'),
+        url('PPPangramSans-Semibold.ttf') format('truetype'),
+        url('PPPangramSans-Semibold.svg#PPPangramSans-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Pangram Sans Narrow';
+    src: url('PPPangramSans-Bold.eot');
+    src: url('PPPangramSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('PPPangramSans-Bold.woff2') format('woff2'),
+        url('PPPangramSans-Bold.woff') format('woff'),
+        url('PPPangramSans-Bold.ttf') format('truetype'),
+        url('PPPangramSans-Bold.svg#PPPangramSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Pangram Sans';
+    src: url('PPPangramSans-Light.eot');
+    src: url('PPPangramSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('PPPangramSans-Light.woff2') format('woff2'),
+        url('PPPangramSans-Light.woff') format('woff'),
+        url('PPPangramSans-Light.ttf') format('truetype'),
+        url('PPPangramSans-Light.svg#PPPangramSans-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
