@@ -1,2 +1,2 @@
-# AMD Media HTML-template project
-Demo: https://anri103.github.io/html-amd-media/
+# STARTSITE HTML-template project
+Demo: https://anri103.github.io/html-startsite-black/
