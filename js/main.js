@@ -1,5 +1,6 @@
 //////////////////////////////////////////////////////////////////
 // [ Back to Top Button ]
+
 const scrollBtn = document.querySelector('.back-to-top');
 const btnVisibility = () => {
     if (window.scrollY > 400) {
@@ -16,4 +17,15 @@ scrollBtn.addEventListener('click', () => {
         top: 0,
         behavior: 'smooth'
     });
+});
+
+//////////////////////////////////////////////////////////////////
+// [ Слайдер на странице index.html ]
+
+const heroSwiper = new Swiper('.heroSwiper', {
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 });

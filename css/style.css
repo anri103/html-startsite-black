@@ -29,6 +29,7 @@
 [ IMPORT FONTS ]*/
 
 @import url('../fonts/pppangramsans/stylesheet.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('../fonts/boxicons/boxicons.min.css');
 
 /*//////////////////////////////////////////////////////////////////
@@ -242,13 +243,13 @@ textarea {
 .btn {
     --bs-btn-padding-x: 2.5rem;
     --bs-btn-padding-y: 0.75rem;
-    --bs-btn-font-family: var(--ff-main);
+    --bs-btn-font-family: 'Open Sans', sans-serif;
     --bs-btn-font-size: 1.25rem;
-    --bs-btn-font-weight: var(--fw-medium);
+    --bs-btn-font-weight: 400;
     --bs-btn-line-height: 1.35;
     --bs-btn-color: var(--color-white);
     --bs-btn-bg: transparent;
-    --bs-btn-border-width: 1px;
+    --bs-btn-border-width: 0;
     --bs-btn-border-color: transparent;
     --bs-btn-border-radius: 0.375rem;
     --bs-btn-hover-border-color: transparent;
@@ -259,10 +260,9 @@ textarea {
 
 .btn-primary {
     --bs-btn-color: var(--color-white);
-    --bs-btn-bg: transparent;
+    --bs-btn-bg: var(--color-white);
     --bs-btn-border-color: transparent;
     --bs-btn-hover-color: var(--color-white);
-    --bs-btn-focus-color: var(--color-white);
     --bs-btn-hover-bg: transparent;
     --bs-btn-hover-border-color: transparent;
     --bs-btn-focus-shadow-rgb: 226, 3, 56;
@@ -273,18 +273,19 @@ textarea {
     --bs-btn-disabled-color: var(--color-white);
     --bs-btn-disabled-bg: var(--color-grey);
     --bs-btn-disabled-border-color: var(--color-grey);
-    background-image: linear-gradient(180deg, #117DFF, #3BC3E1);
-    transition: transform .15s ease-in-out, box-shadow .15s ease-in-out;
+    background-image: linear-gradient(180deg, #117DFF, #3BC3E1, #3BC3E1, #117DFF);
+    background-size: 100% 300%;
+    transition: background-position .4s ease-in-out;
 }
 
-.btn-primary:focus {
-    color: var(--bs-btn-focus-color);
+.btn-primary:hover {
+    background-position: 0 100%;
 }
 
 .btn-secondary {
-    --bs-btn-color: var(--color-black);
-    --bs-btn-bg: transparent;
-    --bs-btn-border-color: var(--color-black);
+    --bs-btn-color: var(--color-blue);
+    --bs-btn-bg: var(--color-white);
+    --bs-btn-border-color: transparent;
     --bs-btn-hover-color: var(--color-white);
     --bs-btn-hover-bg: var(--color-blue);
     --bs-btn-hover-border-color: var(--color-blue);
@@ -296,7 +297,7 @@ textarea {
     --bs-btn-disabled-color: var(--color-white);
     --bs-btn-disabled-bg: var(--color-grey);
     --bs-btn-disabled-border-color: var(--color-grey);
-    transition: transform .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: background-color .4s ease-in-out;
 }
 
 .btn-icon {
@@ -309,15 +310,10 @@ textarea {
     border-radius: 50%;
 }
 
-.btn-group-sm>.btn,
 .btn-sm {
-    padding: 0.25rem 0.5rem;
-    font-size: .875rem;
+    padding: 0.375rem 1.25rem;
+    font-size: 1rem;
     border-radius: 0.2rem;
-}
-
-.btn-md {
-    padding: .5rem 1.5rem;
 }
 
 /*//////////////////////////////////////////////////////////////////
@@ -446,60 +442,8 @@ ul {
     font-weight: 600;
 }
 
-.fz-52 {
-    font-size: 2.125rem;
-}
-
-.fz-48 {
-    font-size: 2.125rem;
-}
-
-.fz-40 {
-    font-size: 2.125rem;
-}
-
-.fz-34 {
-    font-size: 2.125rem;
-}
-
-.fz-32 {
-    font-size: 1.5rem;
-}
-
-.fz-30 {
-    font-size: 1.5rem;
-}
-
-.fz-28 {
-    font-size: 1.375rem;
-}
-
-.fz-22 {
-    font-size: 1.375rem;
-}
-
-.fz-20 {
+.fz-15 {
     font-size: 1.25rem;
-}
-
-.fz-16 {
-    font-size: 1rem;
-}
-
-.fz-14 {
-    font-size: .875rem;
-}
-
-.fz-12 {
-    font-size: .75rem;
-}
-
-.fz-10 {
-    font-size: .625rem;
-}
-
-.fz-8 {
-    font-size: .5rem;
 }
 
 .bg-img {
@@ -512,7 +456,7 @@ ul {
     color: var(--color-black);
 }
 
-.color-red {
+.color-blue {
     color: var(--color-blue);
 }
 
@@ -528,7 +472,7 @@ ul {
     color: var(--color-black);
 }
 
-.color-red-hover:hover {
+.color-blue-hover:hover {
     color: var(--color-blue);
 }
 
@@ -544,27 +488,23 @@ ul {
     background-color: var(--color-black);
 }
 
+.opacity-70 {
+    opacity: .7;
+}
+
 .py-md {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 
 .py-lg {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .py-xl {
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-
-.pt-100 {
-    padding-top: 100px;
-}
-
-.pb-50 {
-    padding-bottom: 50px;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
 }
 
 .z-index-130 {
@@ -773,7 +713,7 @@ ul {
     --bs-btn-active-bg: var(--color-black);
     --bs-btn-active-border-color: var(--color-black);
     position: fixed;
-    bottom: 1rem;
+    bottom: 5rem;
     right: 1rem;
     opacity: 0;
     visibility: hidden;
@@ -875,7 +815,7 @@ ul {
 
     h1,
     .h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     h2,
@@ -903,60 +843,8 @@ ul {
         font-size: 1.125rem;
     }
 
-    .fz-52 {
-        font-size: 3.25rem;
-    }
-
-    .fz-48 {
-        font-size: 3rem;
-    }
-
-    .fz-40 {
-        font-size: 2.5rem;
-    }
-
-    .fz-32 {
-        font-size: 2rem;
-    }
-
-    .fz-30 {
-        font-size: 1.875rem;
-    }
-
-    .fz-28 {
-        font-size: 1.75rem;
-    }
-
-    .fz-22 {
-        font-size: 1.375rem;
-    }
-
-    .fz-20 {
-        font-size: 1.25rem;
-    }
-
-    .fz-16 {
-        font-size: 1rem;
-    }
-
-    .fz-14 {
-        font-size: .875rem;
-    }
-
-    .fz-12 {
-        font-size: .75rem;
-    }
-
-    .fz-10 {
-        font-size: .625rem;
-    }
-
-    .fz-8 {
-        font-size: .5rem;
-    }
-
-    .btn-md {
-        padding: .75rem 2.5rem;
+    .fz-15 {
+        font-size: 1.5rem;
     }
 
     .sticky-top-col {
@@ -1091,60 +979,8 @@ ul {
         font-size: 1.8rem;
     }
 
-    .fz-52 {
-        font-size: 5.2rem;
-    }
-
-    .fz-48 {
-        font-size: 4.8rem;
-    }
-
-    .fz-40 {
-        font-size: 4rem;
-    }
-
-    .fz-32 {
-        font-size: 3.2rem;
-    }
-
-    .fz-30 {
-        font-size: 3rem;
-    }
-
-    .fz-28 {
-        font-size: 2.8rem;
-    }
-
-    .fz-22 {
-        font-size: 2.2rem;
-    }
-
-    .fz-20 {
-        font-size: 2rem;
-    }
-
-    .fz-16 {
-        font-size: 1.6rem;
-    }
-
-    .fz-14 {
-        font-size: 1.4rem;
-    }
-
-    .fz-12 {
-        font-size: 1.2rem;
-    }
-
-    .fz-10 {
-        font-size: 1rem;
-    }
-
-    .fz-8 {
-        font-size: .8rem;
-    }
-
-    .pt-100 {
-        padding-top: 150px;
+    .fz-15 {
+        font-size: 3.5rem;
     }
 
     .btn {
