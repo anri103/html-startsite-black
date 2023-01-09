@@ -8,13 +8,13 @@
     <link rel="icon" type="image/png" href="favicon.png" />
     <title>StartSite Black HTML</title>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
-<body>
+<body class="front-page">
 
     <!-- Меню -->
     <header class="header">
@@ -71,12 +71,12 @@
     <main class="main">
 
         <!-- HERO -->
-        <section class="section min-h-100vh">
+        <section class="section section-hero">
             <div class="container">
                 <div class="row g-0">
                     <div class="col-lg-10">
                         <span class="fz-15">Разработка сайтов</span>
-                        <h1 class="text-uppercase">Разработка сайтов в Москве</h1>
+                        <h1 class="text-uppercase fw-bold">Разработка сайтов в Москве</h1>
                         <div class="swiper heroSwiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -95,49 +95,199 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="testimonialSwiper-next swiper-button-next">
-                                <i class='bx bxs-chevron-right'></i>
-                            </div>
-                            <div class="testimonialSwiper-prev swiper-button-prev">
-                                <i class='bx bxs-chevron-left'></i>
+                            <div class="d-flex justify-content-end position-absolute bottom-0 end-0"
+                                style="z-index: 100;">
+                                <button type="button" class="btn btn-prev btn-icon" id="heroSwiper-prev">
+                                    <i class="bx bx-chevron-left"></i>
+                                </button>
+                                <button type="button" class="btn btn-next btn-icon" id="heroSwiper-next">
+                                    <i class="bx bx-chevron-right"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-2">
-                        <a class="btn btn-primary" href="#">написать</a>
+                        <div class="d-flex flex-column justify-content-center align-items-center h-100 pt-4 pt-lg-0">
+                            <a class="btn btn-primary btn-hero" href="#">написать</a>
+                            <div class="bg-btn-hero bg-color-black"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Выгодная разработка сайта в короткий срок -->
-        <section class="section py-md bg-color-black color-white">
+        <section class="section dark-mode py-5 pt-7 pt-lg-5 bg-color-black color-white">
             <div class="container">
                 <div class="row g-4">
                     <div class="col-lg-6">
                         <h2 class="h1">Выгодная разработка сайта <span class="color-blue">в короткий срок</span></h2>
                         <div class="fw-light">
-                            <p>With the right credit card, you can improve your financial life by building credit, earning rewards and saving money. But with hundreds of credit cards on the market.</p>
+                            <p>With the right credit card, you can improve your financial life by building credit,
+                                earning rewards and saving money. But with hundreds of credit cards on the market.</p>
                         </div>
-                        <a class="btn btn-secondary" href="#">узнать</a>
+                        <a class="btn btn-secondary mt-5" href="#">узнать</a>
                     </div>
-                    <div class="col-lg-6"></div>
+                    <div class="col-lg-5 offset-lg-1">
+                        <div class="swiper priceSwiper overflow-hidden w-100 ms-n2 ms-md-0 pe-3 pe-sm-4" style="max-height: 405px;">
+                            <div class="swiper-wrapper pe-md-2">
+                                <div class="swiper-slide h-auto px-2">
+
+                                    <div class="row row-cols-md-1 row-cols-sm-2 row-cols-1 g-md-4 g-3">
+
+                                        <!-- Article -->
+                                        <div class="col">
+                                            <article class="card card-hover-dark h-100 border-0">
+                                                <div class="card-body">
+                                                    <p class="h3">
+                                                        <a href="#" class="stretched-link">Сайт-визитка от 35 900₽</a>
+                                                    </p>
+                                                    <div class="fw-light">
+                                                        <p>The best credit cards offer some tantalizing combinations of promotions and prizes</p>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                        <!-- Article -->
+                                        <div class="col">
+                                            <article class="card card-hover-dark h-100 border-0">
+                                                <div class="card-body">
+                                                    <p class="h3">
+                                                        <a href="#" class="stretched-link">Корпоративный от 75 900₽</a>
+                                                    </p>
+                                                    <div class="fw-light">
+                                                        <p>We take proactive steps make sure your information and transactions are secure.</p>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                        <!-- Article -->
+                                        <div class="col">
+                                            <article class="card card-hover-dark h-100 border-0">
+                                                <div class="card-body">
+                                                    <p class="h3">
+                                                        <a href="#" class="stretched-link">Интернет-магазин от 120 000₽</a>
+                                                    </p>
+                                                    <div class="fw-light">
+                                                        <p>The best credit cards offer some tantalizing combinations of promotions and prizes</p>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                        <!-- Article -->
+                                        <div class="col">
+                                            <article class="card card-hover-dark h-100 border-0">
+                                                <div class="card-body">
+                                                    <p class="h3">
+                                                        <a href="#" class="stretched-link">Сайт-визитка от 35 900₽</a>
+                                                    </p>
+                                                    <div class="fw-light">
+                                                        <p>The best credit cards offer some tantalizing combinations of promotions and prizes</p>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                        <!-- Article -->
+                                        <div class="col">
+                                            <article class="card card-hover-dark h-100 border-0">
+                                                <div class="card-body">
+                                                    <p class="h3">
+                                                        <a href="#" class="stretched-link">Корпоративный от 75 900₽</a>
+                                                    </p>
+                                                    <div class="fw-light">
+                                                        <p>We take proactive steps make sure your information and transactions are secure.</p>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                        <!-- Article -->
+                                        <div class="col">
+                                            <article class="card card-hover-dark h-100 border-0">
+                                                <div class="card-body">
+                                                    <p class="h3">
+                                                        <a href="#" class="stretched-link">Интернет-магазин от 120 000₽</a>
+                                                    </p>
+                                                    <div class="fw-light">
+                                                        <p>The best credit cards offer some tantalizing combinations of promotions and prizes</p>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Подберите готовый сайт -->
+        <section class="section dark-mode py-5 bg-color-black color-white">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="h1">Подберите <span class="color-blue">готовый сайт</span></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="swiper portfolioSwiper mt-5">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img class="w-100 mx-auto" src="img/portfolio-01.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img class="w-100 mx-auto" src="img/portfolio-01.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img class="w-100 mx-auto" src="img/portfolio-01.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img class="w-100 mx-auto" src="img/portfolio-01.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-4">
+                    <div class="col text-center">
+                        <a class="fw-bold" href="#">Посмотреть более 2200 шаблонов</a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Цены на создание сайтов под ключ  -->
-        <section class="section py-md">
+        <section class="section dark-mode py-5 bg-color-black color-white bg-img min-vh-100" style="background-image: url(img/bg-price.png);">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6"></div>
-                    <div class="col-lg-6"></div>
+                <div class="row justify-content-center">
+                    <div class="col text-center">
+                        <h2 class="h1">Цены на создание <span class="color-blue">сайтов под ключ</span></h2>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-4"></div>
                 </div>
             </div>
         </section>
 
         <!-- Услуги -->
-        <section class="section py-md">
+        <section class="section py-5">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6"></div>
@@ -147,7 +297,7 @@
         </section>
 
         <!-- Как изменились наши клиенты -->
-        <section class="section py-md">
+        <section class="section py-5">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6"></div>
@@ -157,7 +307,7 @@
         </section>
 
         <!-- Заказать сайт в веб-студии недорого -->
-        <section class="section py-md">
+        <section class="section py-5">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6"></div>
@@ -167,7 +317,7 @@
         </section>
 
         <!-- Вопросы и ответы -->
-        <section class="section py-md">
+        <section class="section py-5">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6"></div>
@@ -187,8 +337,8 @@
     </footer>
 
     <!-- Back to Top -->
-    <button type="button" class="btn btn-icon back-to-top">
-        <i class='bx bx-up-arrow-alt'></i>
+    <button type="button" class="btn-scroll-top">
+        <i class="bx bx-up-arrow-alt"></i>
     </button>
 
     <!-- Modal after Action -->
@@ -310,8 +460,11 @@
     </div>
 
     <!-- Cookie alert box -->
-    <div class="alert alert-black fade show text-center position-fixed start-0 bottom-0 z-index-130 w-100" role="alert">
-        <p class="mb-0">🍪 Этот веб-сайт использует cookie. <a href="#privacyPolicy" data-bs-toggle="modal" data-bs-target="#privacyPolicy">Подробнее</a> <button type="button" class="btn btn-secondary btn-sm align-baseline ms-2" data-bs-dismiss="alert" aria-label="Close"><span aria-hidden="true">Ок</span></button>
+    <div class="alert dark-mode alert-black fade show text-center position-fixed start-0 bottom-0 z-index-130 w-100" role="alert">
+        <p class="mb-0">🍪 Этот веб-сайт использует cookie. <a href="#privacyPolicy" data-bs-toggle="modal"
+                data-bs-target="#privacyPolicy">Подробнее</a> <button type="button"
+                class="btn btn-secondary btn-sm align-baseline ms-2" data-bs-dismiss="alert" aria-label="Close"><span
+                    aria-hidden="true">Ок</span></button>
         </p>
     </div>
 

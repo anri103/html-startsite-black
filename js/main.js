@@ -1,12 +1,12 @@
 //////////////////////////////////////////////////////////////////
 // [ Back to Top Button ]
 
-const scrollBtn = document.querySelector('.back-to-top');
+const scrollBtn = document.querySelector('.btn-scroll-top');
 const btnVisibility = () => {
     if (window.scrollY > 400) {
-        scrollBtn.classList.add('activated');
+        scrollBtn.classList.add('show');
     } else {
-        scrollBtn.classList.remove('activated');
+        scrollBtn.classList.remove('show');
     }
 };
 document.addEventListener('scroll', () => {
@@ -20,12 +20,38 @@ scrollBtn.addEventListener('click', () => {
 });
 
 //////////////////////////////////////////////////////////////////
-// [ Слайдер на странице index.html ]
+// [ Слайдеры на странице index.html ]
 
 const heroSwiper = new Swiper('.heroSwiper', {
+    loop: true,
     spaceBetween: 20,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '#heroSwiper-next',
+        prevEl: '#heroSwiper-prev',
     },
+});
+
+const priceSwiper = new Swiper('.priceSwiper', {
+    direction: 'vertical',
+    slidesPerView: 'auto',
+    freeMode: true,
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+    mousewheel: true,
+});
+
+const portfolioSwiper = new Swiper('.portfolioSwiper', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 2,
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 350,
+        modifier: 1,
+        slideShadows: true,
+    },
+    loop: true,
 });
