@@ -431,13 +431,6 @@ img {
     height: auto;
 }
 
-dl,
-ol,
-ul {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
 .ff-main {
     font-family: var(--ff-main);
 }
@@ -476,10 +469,17 @@ ul {
     font-size: 1.25rem;
 }
 
+.fz-17 {
+    font-size: 1.5rem;
+}
+
 @media (min-width: 992px) {
 
     .fz-15 {
         font-size: 1.5rem;
+    }
+    .fz-17 {
+        font-size: 1.75rem;
     }
 }
 
@@ -487,6 +487,9 @@ ul {
 
     .fz-15 {
         font-size: 3.5rem;
+    }
+    .fz-17 {
+        font-size: 3.75rem;
     }
 }
 
@@ -533,21 +536,21 @@ ul {
 }
 
 .py-6 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
 }
 
 .py-7 {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+    padding-top: 7rem !important;
+    padding-bottom: 7rem !important;
 }
 
 .pt-7 {
-    padding-top: 7rem;
+    padding-top: 7rem !important;
 }
 
 .pb-7 {
-    padding-bottom: 7rem;
+    padding-bottom: 7rem !important;
 }
 
 .z-index-130 {
@@ -740,13 +743,20 @@ ul {
     padding: 6.25rem 0;
 }
 
+.footer-border {
+    width: 100%;
+    height: 2px;
+    background: rgb(46,173,235);
+    background: radial-gradient(circle, rgba(46,173,235,1) 0%, rgba(255,255,255,0) 100%);
+}
+
 .btn-scroll-top {
     --si-btn-scroll-top-size: 3.25rem;
     --si-btn-scroll-top-border-radius: 50%;
     --si-btn-scroll-top-color: #fff;
     --si-btn-scroll-top-hover-color: #fff;
-    --si-btn-scroll-top-bg: rgba(18, 14, 30, 0.95);
-    --si-btn-scroll-top-hover-bg: rgba(18, 14, 30, 0.5);
+    --si-btn-scroll-top-bg: #212327;
+    --si-btn-scroll-top-hover-bg: var(--color-blue);
     --si-btn-scroll-top-icon-size: 1.5rem;
     position: fixed;
     display: flex;
@@ -776,7 +786,7 @@ ul {
 }
 
 .btn-scroll-top.show {
-    bottom: 5rem;
+    bottom: 6.5rem;
     opacity: 1;
 }
 
@@ -839,6 +849,7 @@ ul {
     --bs-btn-border-width: 10px;
     --bs-btn-border-color: #fff;
     --bs-btn-hover-border-color: #fff;
+    --bs-btn-active-border-color: #fff;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -906,10 +917,53 @@ ul {
     backdrop-filter: blur(46px);
 }
 
+.cta {
+    background-image: linear-gradient(140deg, #46A6F7 -150%, #6D6D6D -80%, #11101D 90%);
+}
+
+.accordion.accordion-faq {
+    --bs-accordion-border-width: 0;
+    --bs-accordion-border-radius: 0;
+    --bs-accordion-inner-border-radius: 0;
+    --bs-accordion-btn-padding-x: 1.25rem;
+    --bs-accordion-btn-padding-y: 1rem;
+    --bs-accordion-btn-color: var(--color-black);
+    --bs-accordion-btn-bg: transparent;
+    --bs-accordion-btn-icon: url(../img/faq-plus.svg);
+    --bs-accordion-btn-icon-width: 1.5rem;
+    --bs-accordion-btn-icon-transform: none;
+    --bs-accordion-btn-active-icon: url(../img/faq-minus.svg);
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-body-padding-x: 1.25rem;
+    --bs-accordion-body-padding-y: 1rem;
+    --bs-accordion-active-color: var(--color-black);
+    --bs-accordion-active-bg: transparent;
+}
+
+.accordion.accordion-faq .accordion-button {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.accordion.accordion-faq .accordion-button::after {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-left: 0;
+}
+
+.modal {
+    --bs-modal-padding: 0 3.5rem 2.5rem;
+    --bs-modal-header-padding: 1.5rem 1.5rem 0;
+}
+
 .modal-mainForm {
     --bs-modal-border-radius: 0;
     --bs-modal-color: #fff;
     --bs-modal-bg: #120E1E;
+}
+
+.modal-mainForm .modal-body {
+    min-height: 520px;
 }
 
 @media (min-width: 768px) {
@@ -942,6 +996,10 @@ ul {
     .navbar-expand-lg .navbar-nav .dropdown-menu.show {
         -webkit-animation: dropdown-show .3s;
         animation: dropdown-show .3s;
+    }
+
+    .btn-scroll-top.show {
+        bottom: 5rem;
     }
 
 }
