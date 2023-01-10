@@ -966,18 +966,42 @@ img {
     min-height: 520px;
 }
 
-@media (min-width: 768px) {
-    .modal-md {
-        --bs-modal-width: 600px;
-    }
+/*//////////////////////////////////////////////////////////////////
+[ img-comparison-slider ]*/
+
+img-comparison-slider {
+    visibility: hidden;
 }
+
+img-comparison-slider [slot='second'] {
+    display: none;
+}
+
+img-comparison-slider.rendered {
+    visibility: inherit;
+}
+
+img-comparison-slider.rendered [slot='second'] {
+    display: unset;
+}
+
+img-comparison-slider {
+    --divider-width: 2px;
+    --divider-color: var(--color-blue);
+}
+
 
 /*//////////////////////////////////////////////////////////////////
 [ MEDIA ]*/
 
 @media (min-width: 576px) {}
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+    .modal-md {
+        --bs-modal-width: 600px;
+    }
+}
 
 @media (min-width: 992px) {
 

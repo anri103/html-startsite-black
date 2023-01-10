@@ -351,7 +351,6 @@
         </section>
 
         <!-- Как изменились наши клиенты -->
-        <!-- Пока скрыто, будет доработано позже -->
         <section class="section py-5 dark-mode bg-color-black color-white">
             <div class="container">
                 <div class="row justify-content-center">
@@ -360,7 +359,14 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center mt-5">
-                    <img src="img/before-after.png" alt="">
+                    <!-- Изображения для примера, в итоговом проекте НЕ ИСПОЛЬЗОВАТЬ -->
+                    <img-comparison-slider class="mx-n5 mx-xl-0">
+                        <img slot="first" src="img/before-01.webp" alt="Before Mode">
+                        <img slot="second" src="img/after-01.webp" alt="After Mode">
+                        <div slot="handle" style="width: 64px; height: 64px;">
+                            <img src="img/handle.svg" alt="">
+                        </div>
+                    </img-comparison-slider>
                 </div>
             </div>
         </section>
@@ -652,6 +658,7 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/img-comparison-slider.js"></script>
     <script src="js/main.js"></script>
 
 </body>
