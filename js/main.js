@@ -31,16 +31,6 @@ const heroSwiper = new Swiper('.heroSwiper', {
     },
 });
 
-const priceSwiper = new Swiper('.priceSwiper', {
-    direction: 'vertical',
-    slidesPerView: 'auto',
-    freeMode: true,
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
-    mousewheel: true,
-});
-
 const portfolioSwiper = new Swiper('.portfolioSwiper', {
     effect: 'coverflow',
     grabCursor: true,

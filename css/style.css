@@ -921,14 +921,37 @@ img {
     color: #fff;
 }
 
+.scroll-box {
+    max-height: 405px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.scroll-box::-webkit-scrollbar {
+    width: 1px;
+}
+
+.scroll-box::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    outline: 2px solid var(--color-blue);
+    background-clip: content-box;
+    background-color: var(--color-blue);
+}
+
 .card.card-hover-dark {
     --bs-card-color: #fff;
-    --bs-card-bg: transparent;
-    transition: background-color .3s ease-in-out;
+    --bs-card-bg: rgba(131, 129, 137, 0.25);
+    background-size: 100% 200%;
+    background-image: linear-gradient(160deg, #838189 -100%, #14101D 100%);
+    transition: background-position .3s ease-in-out;
 }
 
 .card.card-hover-dark:hover {
-    --bs-card-bg: rgba(131, 129, 137, 0.25);
+    background-position: 0 100%;
 }
 
 .card.card-hover-dark .h3>a {
@@ -938,14 +961,6 @@ img {
 
 .card.card-hover-dark:hover .h3>a {
     color: var(--color-blue);
-}
-
-.priceSwiper .swiper-scrollbar {
-    background-color: rgba(255, 255, 255, 0.14);
-}
-
-.priceSwiper .swiper-scrollbar-drag {
-    background-color: var(--color-blue);
 }
 
 .portfoliSwiper .swiper-slide {
