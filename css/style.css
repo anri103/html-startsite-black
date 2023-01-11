@@ -908,12 +908,12 @@ img {
     z-index: -1;
 }
 
-.front-page .section-hero {
+.frontpage-hero {
     padding-top: 5rem;
     padding-bottom: 0;
 }
 
-.front-page .heroSwiper {
+.frontpage-hero .heroSwiper {
     margin-top: 5rem;
 }
 
