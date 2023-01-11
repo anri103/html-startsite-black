@@ -516,6 +516,10 @@ img {
     }
 }
 
+.lh-4 {
+    line-height: 1.5;
+}
+
 .bg-img {
     background-position: 50% 50%;
     background-repeat: no-repeat;
