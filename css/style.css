@@ -922,9 +922,7 @@ img {
 }
 
 .scroll-box {
-    max-height: 405px;
-    overflow-y: auto;
-    overflow-x: hidden;
+    position: relative;
 }
 
 .scroll-box::-webkit-scrollbar {
@@ -1082,6 +1080,12 @@ img-comparison-slider {
 
     .btn-scroll-top.show {
         bottom: 5rem;
+    }
+
+    .scroll-box {
+        max-height: 405px;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
 
 }
