@@ -879,7 +879,7 @@ img {
 [ MAIN CONTENT ]*/
 
 .main {
-    padding: 0;
+    padding: 3rem 0 3rem;
 }
 
 .btn-hero {
@@ -1037,6 +1037,10 @@ img-comparison-slider.rendered [slot='second'] {
 img-comparison-slider {
     --divider-width: 2px;
     --divider-color: var(--color-blue);
+}
+
+.card.card-case {
+    --bs-card-spacer-x: 0;
 }
 
 
