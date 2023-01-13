@@ -54,8 +54,8 @@ Version: 1.0
     --bs-body-color: var(--color-black);
     --bs-body-bg: #fff;
     --bs-border-color: #dee2e6;
-    --bs-link-color: #46A6F7;
-    --bs-link-hover-color: #000;
+    --bs-link-color: var(--color-black);
+    --bs-link-hover-color: var(--color-blue);
 }
 
 html {
@@ -196,7 +196,27 @@ h6,
 /*//////////////////////////////////////////////////////////////////
 [ LINKS ]*/
 
-a {
+a.link-blue {
+    --bs-link-color: var(--color-blue);
+    --bs-link-hover-color: var(--color-black);
+}
+
+.dark-mode a.link-blue {
+    --bs-link-color: var(--color-blue);
+    --bs-link-hover-color: var(--color-white);
+}
+
+a.link-white {
+    --bs-link-color: var(--color-white);
+    --bs-link-hover-color: var(--color-blue);
+}
+
+a.link-grey {
+    --bs-link-color: var(--color-grey);
+    --bs-link-hover-color: var(--color-blue);
+}
+
+.breadcrumb a {
     text-decoration: none;
 }
 
@@ -782,7 +802,12 @@ img {
     width: 100%;
     height: 2px;
     background: rgb(46,173,235);
-    background: radial-gradient(circle, rgba(46,173,235,1) 0%, rgba(255,255,255,0) 100%);
+    background: radial-gradient(circle, rgba(46,173,235,1) 0%, rgba(0,0,0,.5) 100%);
+}
+
+.footer .nav {
+    --bs-nav-link-color: var(--color-white);
+    --bs-nav-link-hover-color: var(--color-blue);
 }
 
 .btn-scroll-top {
@@ -882,6 +907,11 @@ img {
     padding: 3rem 0 3rem;
 }
 
+.dark-mode {
+    --bs-link-color: var(--color-white);
+    --bs-link-hover-color: var(--color-blue);
+}
+
 .btn-hero {
     --si-btn-hero-size: 10rem;
     --si-btn-hero-font-size: 1.25rem;
@@ -915,10 +945,6 @@ img {
 
 .frontpage-hero .heroSwiper {
     margin-top: 5rem;
-}
-
-.dark-mode a:hover {
-    color: #fff;
 }
 
 .scroll-box {
@@ -966,6 +992,7 @@ img {
 }
 
 .card.card-pricing {
+    --bs-card-border-color: rgba(255, 255, 255, .1);
     --bs-card-bg: rgba(18, 14, 30, 0.2);
     --bs-card-cap-bg: transparent;
     backdrop-filter: blur(46px);
@@ -973,6 +1000,10 @@ img {
 
 .card.card-pricing .text-muted {
     color: #F5F6F7 !important;
+}
+
+.card.card-pricing .card-footer {
+    --bs-card-border-width: 0;
 }
 
 .cta {
@@ -999,12 +1030,13 @@ img {
 }
 
 .accordion.accordion-faq .accordion-button {
+    align-items: flex-start;
     flex-direction: row-reverse;
     justify-content: flex-end;
 }
 
 .accordion.accordion-faq .accordion-button::after {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     margin-right: 1rem;
     margin-left: 0;
 }
@@ -1039,8 +1071,15 @@ img-comparison-slider {
     --divider-color: var(--color-blue);
 }
 
+.img-comparison-slider--handle {
+    width: 32px;
+    height: 32px;
+}
+
 .card.card-case {
     --bs-card-spacer-x: 0;
+    --bs-card-border-radius: 0;
+    --bs-card-inner-border-radius: 0;
 }
 
 
@@ -1090,6 +1129,11 @@ img-comparison-slider {
         max-height: 405px;
         overflow-y: auto;
         overflow-x: hidden;
+    }
+
+    .img-comparison-slider--handle {
+        width: 64px;
+        height: 64px;
     }
 
 }
@@ -1150,5 +1194,9 @@ img-comparison-slider {
     .form-control,
     .form-select {
         font-size: 1.8rem;
+    }
+
+    .accordion.accordion-faq .accordion-button::after {
+        margin-top: 2rem;
     }
 }
