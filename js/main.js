@@ -25,6 +25,9 @@ scrollBtn.addEventListener('click', () => {
 const heroSwiper = new Swiper('.heroSwiper', {
     loop: true,
     spaceBetween: 20,
+    autoplay: {
+        delay: 4000,
+    },
     navigation: {
         nextEl: '#heroSwiper-next',
         prevEl: '#heroSwiper-prev',
@@ -36,6 +39,9 @@ const portfolioSwiper = new Swiper('.portfolioSwiper', {
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: 2,
+    autoplay: {
+        delay: 4000,
+    },
     coverflowEffect: {
         rotate: 0,
         stretch: 0,
@@ -44,4 +50,19 @@ const portfolioSwiper = new Swiper('.portfolioSwiper', {
         slideShadows: true,
     },
     loop: true,
+});
+
+//////////////////////////////////////////////////////////////////
+// [ Слайдер на странице about.html ]
+
+const testimonialSwiper = new Swiper('.testimonialSwiper', {
+    loop: true,
+    spaceBetween: 20,
+    autoplay: {
+        delay: 4000,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+    },
 });

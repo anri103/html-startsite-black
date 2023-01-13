@@ -590,6 +590,14 @@ img {
     background-color: var(--color-black);
 }
 
+.mb-6 {
+    margin-bottom: 6rem;
+}
+
+.mb-7 {
+    margin-bottom: 7rem;
+}
+
 .py-6 {
     padding-top: 5rem !important;
     padding-bottom: 5rem !important;
@@ -1010,7 +1018,7 @@ img {
     background-image: linear-gradient(140deg, #46A6F7 -150%, #6D6D6D -80%, #11101D 90%);
 }
 
-.accordion.accordion-faq {
+.accordion {
     --bs-accordion-border-width: 0;
     --bs-accordion-border-radius: 0;
     --bs-accordion-inner-border-radius: 0;
@@ -1020,8 +1028,7 @@ img {
     --bs-accordion-btn-bg: transparent;
     --bs-accordion-btn-icon: url(../img/faq-plus.svg);
     --bs-accordion-btn-icon-width: 1.5rem;
-    --bs-accordion-btn-icon-transform: none;
-    --bs-accordion-btn-active-icon: url(../img/faq-minus.svg);
+    --bs-accordion-btn-active-icon: url(../img/faq-plus.svg);
     --bs-accordion-btn-focus-box-shadow: none;
     --bs-accordion-body-padding-x: 1.25rem;
     --bs-accordion-body-padding-y: 1rem;
@@ -1029,16 +1036,24 @@ img {
     --bs-accordion-active-bg: transparent;
 }
 
-.accordion.accordion-faq .accordion-button {
+.accordion .accordion-button {
     align-items: flex-start;
     flex-direction: row-reverse;
     justify-content: flex-end;
 }
 
-.accordion.accordion-faq .accordion-button::after {
-    margin-top: 1.5rem;
+.accordion .accordion-button::after {
+    margin-top: 0.25rem;
     margin-right: 1rem;
     margin-left: 0;
+}
+
+.accordion.accordion-faq {
+    --bs-accordion-btn-active-icon: url(../img/faq-minus.svg);
+}
+
+.accordion.accordion-faq .accordion-button::after {
+    margin-top: 1.5rem;
 }
 
 .modal-mainForm {
@@ -1081,6 +1096,39 @@ img-comparison-slider {
     --bs-card-border-radius: 0;
     --bs-card-inner-border-radius: 0;
     --bs-card-bg: var(--color-black);
+}
+
+.testimonialSwiper {
+    --swiper-theme-color: var(--color-blue);
+    --swiper-pagination-bullet-inactive-color: var(--color-blue);
+    --swiper-pagination-bullet-inactive-opacity: .7;
+}
+
+.testimonialSwiper .swiper-pagination {
+    left: 0;
+    transform: none;
+    white-space: nowrap;
+}
+
+.card.card-shop-item {
+    --bs-card-spacer-y: 0.5rem;
+    --bs-card-border-color: rgba(255, 255, 255, .1);
+    --bs-card-cap-bg: transparent;
+    padding-bottom: 1rem;
+}
+
+.card.card-shop-item .card-footer {
+    --bs-card-border-width: 0;
+}
+
+.card.card-shop-item .btn-secondary {
+    --bs-btn-border-width: 2px;
+    --bs-btn-color: var(--color-black);
+    --bs-btn-bg: var(--color-white);
+    --bs-btn-border-color: var(--color-black);
+    --bs-btn-hover-color: var(--color-white);
+    --bs-btn-hover-bg: var(--color-blue);
+    --bs-btn-hover-border-color: var(--color-blue);
 }
 
 
