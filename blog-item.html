@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="favicon.png" />
-    <title>404</title>
+    <title>policy</title>
 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -51,7 +51,7 @@
                                 </ul>
                             </li> -->
                             <li class="nav-item"><a class="nav-link" href="shop.html">Шаблоны</a></li>
-                            <li class="nav-item"><a class="nav-link" href="blog.html">Блог</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="blog.html">Блог</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
                         </ul>
                     </div>
@@ -64,15 +64,24 @@
     <!-- Контент -->
     <main class="main">
 
+        <!-- breadcrumb -->
+        <section class="py-2">
+            <div class="container">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                        <li class="breadcrumb-item"><a href="blog.html">Статьи</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Тестовая статья</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
         <section class="section py-5">
             <div class="container">
-                <div class="text-center" style="padding-top: 10rem; padding-bottom: 10rem">
-                    <div class="mb-5">
-                        <p class="fw-bold" style="font-size: 10rem;">404</p>
-                        <p>Страница, которую вы ищете, недоступна.</p>
-                    </div>
-                    <a class="btn btn-primary" href="index.html">На главную</a>
-                </div>
+                <h1 class="text-uppercase fw-bold mb-5">Тестовая статья</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quam laboriosam harum ut at, aperiam, ipsam nihil, minima iusto quis nesciunt ex dicta eligendi sint! Placeat quod debitis quas temporibus.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate corrupti magnam mollitia architecto, et nihil earum laudantium, id quaerat ab nemo sed ratione culpa deleniti veniam quasi nulla sunt nisi.</p>
             </div>
         </section>
 
@@ -206,7 +215,8 @@
     </div>
 
     <!-- Cookie alert box -->
-    <div class="alert dark-mode alert-black fade show text-center position-fixed start-0 bottom-0 z-index-1030 w-100" role="alert">
+    <div class="alert dark-mode alert-black fade show text-center position-fixed start-0 bottom-0 z-index-1030 w-100"
+        role="alert">
         <p class="mb-0">🍪 Этот веб-сайт использует cookie. <a href="policy.html" target="_blank">Подробнее</a> <button type="button"
                 class="btn btn-secondary btn-sm align-baseline ms-2 mt-2 mt-sm-0" data-bs-dismiss="alert" aria-label="Close"><span
                     aria-hidden="true">Ок</span></button>
