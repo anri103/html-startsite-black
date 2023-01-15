@@ -23,11 +23,6 @@ scrollBtn.addEventListener('click', () => {
 // [ Слайдеры на странице index.html ]
 
 const heroSwiper = new Swiper('.heroSwiper', {
-    loop: true,
-    spaceBetween: 20,
-    autoplay: {
-        delay: 4000,
-    },
     navigation: {
         nextEl: '#heroSwiper-next',
         prevEl: '#heroSwiper-prev',
@@ -66,3 +61,27 @@ const testimonialSwiper = new Swiper('.testimonialSwiper', {
         dynamicBullets: true,
     },
 });
+
+//////////////////////////////////////////////////////////////////
+// [ Слайдер на странице blog-item.html ]
+
+const relatedPosts = new Swiper('.relatedPosts', {
+    slidesPerView: 1,
+    navigation: {
+        nextEl: '#relatedPosts-next',
+        prevEl: '#relatedPosts-prev',
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 3,
+        },
+    },
+});
+
+//////////////////////////////////////////////////////////////////
+// [ All Parallax ]
+
+for (var e = document.querySelectorAll('.parallax'), t = 0; t < e.length; t++) new Parallax(e[t]);

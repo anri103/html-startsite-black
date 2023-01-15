@@ -17,8 +17,8 @@
 <body>
 
     <!-- Меню -->
-    <header class="header">
-        <nav class="navbar navbar-expand-lg py-lg-4">
+    <header class="header bg-white fixed-top">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
 
                 <a class="navbar-brand logo hover-opacity" href="index.html">
@@ -57,6 +57,8 @@
                     </div>
                 </div>
 
+                <a class="fw-bold text-decoration-none d-none d-xl-inline-flex ms-4" href="tel:+74951595901">+7 (495) 159-59-01</a>
+
             </div>
         </nav>
     </header>
@@ -65,13 +67,13 @@
     <main class="main">
 
         <!-- HERO -->
-        <section class="section frontpage-hero">
+        <section class="section overflow-hidden frontpage-hero">
             <div class="container">
-                <div class="row g-0">
+                <!-- <div class="row gy-0">
                     <div class="col-lg-10">
                         <span class="fz-15">Разработка сайтов</span>
                         <h1 class="text-uppercase fw-bold">Разработка сайтов в Москве</h1>
-                        <div class="swiper heroSwiper">
+                        <div class="swiper heroSwiper mt-5">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <a href="cases-item.html">
@@ -107,6 +109,61 @@
                             <div class="bg-btn-hero bg-color-black"></div>
                         </div>
                     </div>
+                </div> -->
+
+                <div class="row">
+                    <div class="col-lg-10">
+                        <span class="fz-15">Разработка сайтов</span>
+                        <h1 class="text-uppercase fw-bold">Разработка сайтов в Москве</h1>
+                    </div>
+                    <div class="col-lg-2 text-center d-none d-lg-block">
+                        <a class="btn btn-icon btn-primary btn-hero btn-lg rounded-circle text-lowercase" href="#mainForm" data-bs-toggle="modal" data-bs-target="#mainForm">Написать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="swiper heroSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <!-- Parallax gfx -->
+                            <div class="parallax">
+                                <div class="parallax-layer" data-depth="0.1" style="z-index: 2;">
+                                  <img class="mx-auto" src="img/devices1.png" alt="Card">
+                                </div>
+                                <div class="parallax-layer" data-depth="0.25" style="z-index: 3;">
+                                  <img class="mx-auto" src="img/devices2.png" alt="Bubble">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <!-- Parallax gfx -->
+                            <div class="parallax">
+                                <div class="parallax-layer" data-depth="0.1" style="z-index: 2;">
+                                  <img src="img/devices1.png" alt="Card">
+                                </div>
+                                <div class="parallax-layer" data-depth="0.25" style="z-index: 3;">
+                                  <img src="img/devices2.png" alt="Bubble">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <!-- Parallax gfx -->
+                            <div class="parallax">
+                                <div class="parallax-layer" data-depth="0.1" style="z-index: 2;">
+                                  <img src="img/devices1.png" alt="Card">
+                                </div>
+                                <div class="parallax-layer" data-depth="0.25" style="z-index: 3;">
+                                  <img src="img/devices2.png" alt="Bubble">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-icon btn-prev rounded-circle" id="heroSwiper-prev">
+                        <i class="bx bx-chevron-left"></i>
+                    </button>
+                    <button type="button" class="btn btn-icon btn-next rounded-circle" id="heroSwiper-next">
+                        <i class="bx bx-chevron-right"></i>
+                    </button>
                 </div>
             </div>
         </section>
@@ -114,7 +171,7 @@
         <!-- Выгодная разработка сайта в короткий срок -->
         <section class="section py-5 pt-7 pt-lg-5 dark-mode bg-color-black color-white">
             <div class="container">
-                <div class="row g-4">
+                <div class="row gy-4">
                     <div class="col-lg-6">
                         <h2 class="h1">Выгодная разработка сайта <span class="color-blue">в короткий срок</span></h2>
                         <div class="fw-light">
@@ -127,14 +184,14 @@
                     </div>
                     <div class="col-lg-5 offset-lg-1">
                         <div class="scroll-box pe-lg-4">
-                            <div class="row g-3 g-md-4 row-cols-1">
+                            <div class="row gy-3 g-md-4 row-cols-1">
 
                                 <!-- Article -->
                                 <div class="col">
                                     <article class="card card-hover-dark h-100 border-0">
                                         <div class="card-body">
                                             <p class="h3">
-                                                <a href="#" class="stretched-link text-decoration-none"><span class="d-block d-lg-inline">Сайт-визитка</span> от 35
+                                                <a href="blog-item.html" class="stretched-link text-decoration-none"><span class="d-block d-lg-inline">Сайт-визитка</span> от 35
                                                     900₽</a>
                                             </p>
                                             <div class="fw-light">
@@ -151,7 +208,7 @@
                                     <article class="card card-hover-dark h-100 border-0">
                                         <div class="card-body">
                                             <p class="h3">
-                                                <a href="#" class="stretched-link text-decoration-none"><span class="d-block d-lg-inline">Корпоративный</span> от 75
+                                                <a href="blog-item.html" class="stretched-link text-decoration-none"><span class="d-block d-lg-inline">Корпоративный</span> от 75
                                                     900₽</a>
                                             </p>
                                             <div class="fw-light">
@@ -167,7 +224,7 @@
                                     <article class="card card-hover-dark h-100 border-0">
                                         <div class="card-body">
                                             <p class="h3">
-                                                <a href="#" class="stretched-link text-decoration-none"><span class="d-block d-lg-inline">Интернет-магазин</span> от 120
+                                                <a href="blog-item.html" class="stretched-link text-decoration-none"><span class="d-block d-lg-inline">Интернет-магазин</span> от 120
                                                     000₽</a>
                                             </p>
                                             <div class="fw-light">
@@ -184,7 +241,7 @@
                                     <article class="card card-hover-dark h-100 border-0">
                                         <div class="card-body">
                                             <p class="h3">
-                                                <a href="#" class="stretched-link text-decoration-none"><span class="d-block d-lg-inline">Сайт-визитка</span> от 35
+                                                <a href="blog-item.html" class="stretched-link text-decoration-none"><span class="d-block d-lg-inline">Сайт-визитка</span> от 35
                                                     900₽</a>
                                             </p>
                                             <div class="fw-light">
@@ -201,7 +258,7 @@
                                     <article class="card card-hover-dark h-100 border-0">
                                         <div class="card-body">
                                             <p class="h3">
-                                                <a href="#" class="stretched-link text-decoration-none"><span class="d-block d-lg-inline">Корпоративный</span> от 75
+                                                <a href="blog-item.html" class="stretched-link text-decoration-none"><span class="d-block d-lg-inline">Корпоративный</span> от 75
                                                     900₽</a>
                                             </p>
                                             <div class="fw-light">
@@ -217,7 +274,7 @@
                                     <article class="card card-hover-dark h-100 border-0">
                                         <div class="card-body">
                                             <p class="h3">
-                                                <a href="#" class="stretched-link text-decoration-none"><span class="d-block d-lg-inline">Интернет-магазин</span> от 120
+                                                <a href="blog-item.html" class="stretched-link text-decoration-none"><span class="d-block d-lg-inline">Интернет-магазин</span> от 120
                                                     000₽</a>
                                             </p>
                                             <div class="fw-light">
@@ -269,7 +326,7 @@
                 </div>
                 <div class="row justify-content-center mt-5">
                     <div class="col-12 text-center">
-                        <a class="link-blue text-decoration-none fz-12 fw-bold" href="#">Посмотреть более 2200 шаблонов</a>
+                        <a class="link-blue text-decoration-none fz-12 fw-bold" href="shop.html">Посмотреть более 2200 шаблонов</a>
                     </div>
                 </div>
             </div>
@@ -284,7 +341,7 @@
                         <h2 class="h1 mb-5">Цены на создание <span class="color-blue">сайтов под ключ</span></h2>
                     </div>
                 </div>
-                <div class="row g-4">
+                <div class="row gy-4">
                     <div class="col-lg-4">
                         <div class="card card-pricing h-100">
                             <div class="card-body pb-0">
@@ -418,7 +475,7 @@
         <section class="section py-5 dark-mode bg-color-black color-white">
             <div class="container">
                 <div class="cta p-5 px-4 px-lg-5 rounded">
-                    <div class="row g-4 align-items-center">
+                    <div class="row gy-4 align-items-center">
                         <div class="col-lg-8">
                             <h2 class="h1">Заказать сайт<br> в веб-студии <span class="color-blue">недорого</span></h2>
                             <div class="fw-light mt-3">
@@ -528,7 +585,7 @@
     <div class="footer-border"></div>
     <footer class="footer py-4 dark-mode bg-color-black color-white">
         <div class="container">
-            <div class="row g-2 py-4">
+            <div class="row gy-2 py-4">
                 <div class="col-lg-3">
                     <div class="d-flex justify-content-center justify-content-lg-start">
                         <a class="navbar-brand logo hover-opacity" href="index.html">
@@ -560,7 +617,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="row g-2 py-4 align-items-end">
+            <div class="row gy-2 py-4 align-items-end">
                 <div class="col-lg-6 text-center text-lg-end order-lg-2">
                     <p><a class="text-decoration-none" href="mailto:support@startsite.studio">support@startsite.studio</a></p>
                     <p><a class="text-decoration-none" href="tel:+74951595901">+7 (495) 159-59-01</a></p>
@@ -663,6 +720,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/img-comparison-slider.js"></script>
+    <script src="js/parallax.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>
