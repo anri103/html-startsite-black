@@ -57,7 +57,8 @@
                     </div>
                 </div>
 
-                <a class="fw-bold text-decoration-none d-none d-xl-inline-flex ms-4" href="tel:+74951595901">+7 (495) 159-59-01</a>
+                <a class="fw-bold text-decoration-none d-none d-xl-inline-flex ms-4" href="tel:+74951595901">+7 (495)
+                    159-59-01</a>
 
             </div>
         </nav>
@@ -80,251 +81,431 @@
 
         <section class="section py-5">
             <div class="container">
-                <p class="fz-15 fw-light mb-0">Для своего бизнеса</p>
-                <h1 class="text-uppercase fw-bold mb-5">Выбери готовый сайт</h1>
-                <!-- <div class="row gy-4">
-                    <div class="col-lg-4">
-                        123
+                <div class="mb-5">
+                    <p class="fz-15 fw-light mb-0">Для своего бизнеса</p>
+                    <h1 class="text-uppercase fw-bold">Выбери готовый сайт</h1>
+                </div>
+                <div class="row gy-2 mb-4">
+                    <div class="col-md-6 col-lg-9 order-lg-2">
+                        <form action="#">
+                            <div class="input-group">
+                                <input type="text" class="form-control pe-5" placeholder="Поиск...">
+                                <i
+                                    class="bx bx-search position-absolute top-50 end-0 translate-middle-y me-3 z-index-5"></i>
+                            </div>
+                        </form>
                     </div>
-                    <div class="col-lg-8">
-                        <div class="row gy-4">
-                            <div class="col-md-6">
-                                <div class="card card-case">
-                                    <img class="card-img" src="img/case-01.png" alt="">
+                    <div class="col-md-4 col-lg-3 order-lg-1">
+                        <form action="#">
+                            <select class="form-select">
+                                <option>Сначала новые</option>
+                                <option value="processes">Сначала дешевые</option>
+                                <option value="startups">Сначала дорогие</option>
+                                <option value="strategy">По названию (а-я)</option>
+                                <option value="business">По названию (я-а)</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="col-md-2 d-lg-none">
+                        <a class="btn btn-outline" data-bs-toggle="offcanvas" href="#offcanvasCategory" role="button" aria-controls="offcanvasCategory"><i class="bx bx-filter"></i></a>
+                    </div>
+                </div>
+                <!-- Shop wrap -->
+                <div class="row">
+
+
+
+                    <!-- aside -->
+                    <div class="col-lg-3">
+                        <div class="bg-color-black h-100">
+                            <div class="offcanvas-lg offcanvas-start dark-mode bg-color-black color-white" tabindex="-1" id="offcanvasCategory" aria-labelledby="offcanvasCategoryLabel">
+
+                                <div class="offcanvas-header d-lg-none">
+                                    <p class="h2 offcanvas-title" id="offcanvasCategoryLabel">Фильтр</p>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body p-lg-4">
+                                    <form action="#">
+                                        <div class="mb-4">
+                                            <p class="h3 mb-3">CMS</p>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="WordPress" checked>
+                                                <label class="form-check-label" for="WordPress">WordPress</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="OpenCart">
+                                                <label class="form-check-label" for="OpenCart">OpenCart</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="ModX">
+                                                <label class="form-check-label" for="ModX">ModX</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="Drupal">
+                                                <label class="form-check-label" for="Drupal">Drupal</label>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <p class="h3 mb-3">Категория</p>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="cat1">
+                                                <label class="form-check-label" for="cat1">Мода и красота</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="cat2">
+                                                <label class="form-check-label" for="cat2">Автомобили</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="cat3">
+                                                <label class="form-check-label" for="cat3">Деловые услуги</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="cat4">
+                                                <label class="form-check-label" for="cat4">Спорт и туризм</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="cat5">
+                                                <label class="form-check-label" for="cat5">Образование/курсы</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="cat6">
+                                                <label class="form-check-label" for="cat6">Транспорт/услуги</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="cat2">
+                                                <label class="form-check-label" for="cat2">Медицина</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="cat2">
+                                                <label class="form-check-label" for="cat2">Еда и напитки/кафе и рестораны</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="cat2">
+                                                <label class="form-check-label" for="cat2">Бытовые услуги/досуг</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="cat2">
+                                                <label class="form-check-label" for="cat2">Строительство</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="cat2">
+                                                <label class="form-check-label" for="cat2">Дом и офис</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="cat2">
+                                                <label class="form-check-label" for="cat2">Животные</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="cat2">
+                                                <label class="form-check-label" for="cat2">Промышленность и оборудование</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="cat2">
+                                                <label class="form-check-label" for="cat2">Мебель</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="cat2">
+                                                <label class="form-check-label" for="cat2">Культура и искусство</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="cat2">
+                                                <label class="form-check-label" for="cat2">Одежда и обувь</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="cat2">
+                                                <label class="form-check-label" for="cat2">Связь и СМИ</label>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary w-100">Применить</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /aside -->
+
+
+
+                    <div class="col-lg-9">
+                        <!-- Shop grid -->
+                        <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
+                            <!-- Item -->
+                            <div class="col pb-3">
+                                <article class="card card-shop-item shadow h-100">
+                                    <a class="hover-shine" href="shop-item.html">
+                                        <img class="card-img-top" src="img/shop-item-01.png" alt="">
+                                    </a>
                                     <div class="card-body">
-                                        <p class="card-title fz-15 fw-bold"><a class="stretched-link" href="shop-item.html">Дрова-шоп</a></p>
-                                        <p class="card-text">The best credit cards offer some tantalizing combinations of promotions and prizes</p>
+                                        <p class="small mb-0">WordPress</p>
+                                        <p class="fz-15"><a class="text-decoration-none"
+                                                href="shop-item.html">Интернет-магазин мебели</a></p>
+                                        <div class="d-flex justify-content-between py-3">
+                                            <p class="small">№123456</p>
+                                            <p class="small">6900 руб.</p>
+                                        </div>
                                     </div>
-                                </div>
+                                    <div class="card-footer">
+                                        <div class="row gy-2">
+                                            <div class="col-lg-12">
+                                                <a class="btn btn-primary w-100" href="shop-item.html">Подробнее</a>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <a class="btn btn-outline w-100" href="#">Демо</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Item -->
+                            <div class="col pb-3">
+                                <article class="card card-shop-item shadow h-100">
+                                    <a class="hover-shine" href="shop-item.html">
+                                        <img class="card-img-top" src="img/shop-item-02.png" alt="">
+                                    </a>
+                                    <div class="card-body">
+                                        <p class="small mb-0">Bootstrap 5</p>
+                                        <p class="fz-15"><a class="text-decoration-none"
+                                                href="shop-item.html">Интернет-магазин мебели</a></p>
+                                        <div class="d-flex justify-content-between py-3">
+                                            <p class="small">№123456</p>
+                                            <p class="small">6900 руб.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row gy-2">
+                                            <div class="col-lg-12">
+                                                <a class="btn btn-primary w-100" href="shop-item.html">Подробнее</a>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <a class="btn btn-outline w-100" href="#">Демо</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Item -->
+                            <div class="col pb-3">
+                                <article class="card card-shop-item shadow h-100">
+                                    <a class="hover-shine" href="shop-item.html">
+                                        <img class="card-img-top" src="img/shop-item-02.png" alt="">
+                                    </a>
+                                    <div class="card-body">
+                                        <p class="small mb-0">React JS</p>
+                                        <p class="fz-15"><a class="text-decoration-none"
+                                                href="shop-item.html">Интернет-магазин мебели</a></p>
+                                        <div class="d-flex justify-content-between py-3">
+                                            <p class="small">№123456</p>
+                                            <p class="small">6900 руб.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row gy-2">
+                                            <div class="col-lg-12">
+                                                <a class="btn btn-primary w-100" href="shop-item.html">Подробнее</a>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <a class="btn btn-outline w-100" href="#">Демо</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Item -->
+                            <div class="col pb-3">
+                                <article class="card card-shop-item shadow h-100">
+                                    <a class="hover-shine" href="shop-item.html">
+                                        <img class="card-img-top" src="img/shop-item-01.png" alt="">
+                                    </a>
+                                    <div class="card-body">
+                                        <p class="small mb-0">WordPress</p>
+                                        <p class="fz-15"><a class="text-decoration-none"
+                                                href="shop-item.html">Интернет-магазин мебели</a></p>
+                                        <div class="d-flex justify-content-between py-3">
+                                            <p class="small">№123456</p>
+                                            <p class="small">6900 руб.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row gy-2">
+                                            <div class="col-lg-12">
+                                                <a class="btn btn-primary w-100" href="shop-item.html">Подробнее</a>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <a class="btn btn-outline w-100" href="#">Демо</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Item -->
+                            <div class="col pb-3">
+                                <article class="card card-shop-item shadow h-100">
+                                    <a class="hover-shine" href="shop-item.html">
+                                        <img class="card-img-top" src="img/shop-item-01.png" alt="">
+                                    </a>
+                                    <div class="card-body">
+                                        <p class="small mb-0">WordPress</p>
+                                        <p class="fz-15"><a class="text-decoration-none"
+                                                href="shop-item.html">Интернет-магазин мебели</a></p>
+                                        <div class="d-flex justify-content-between py-3">
+                                            <p class="small">№123456</p>
+                                            <p class="small">6900 руб.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row gy-2">
+                                            <div class="col-lg-12">
+                                                <a class="btn btn-primary w-100" href="shop-item.html">Подробнее</a>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <a class="btn btn-outline w-100" href="#">Демо</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Item -->
+                            <div class="col pb-3">
+                                <article class="card card-shop-item shadow h-100">
+                                    <a class="hover-shine" href="shop-item.html">
+                                        <img class="card-img-top" src="img/shop-item-02.png" alt="">
+                                    </a>
+                                    <div class="card-body">
+                                        <p class="small mb-0">WordPress</p>
+                                        <p class="fz-15"><a class="text-decoration-none"
+                                                href="shop-item.html">Интернет-магазин мебели</a></p>
+                                        <div class="d-flex justify-content-between py-3">
+                                            <p class="small">№123456</p>
+                                            <p class="small">6900 руб.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row gy-2">
+                                            <div class="col-lg-12">
+                                                <a class="btn btn-primary w-100" href="shop-item.html">Подробнее</a>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <a class="btn btn-outline w-100" href="#">Демо</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Item -->
+                            <div class="col pb-3">
+                                <article class="card card-shop-item shadow h-100">
+                                    <a class="hover-shine" href="shop-item.html">
+                                        <img class="card-img-top" src="img/shop-item-02.png" alt="">
+                                    </a>
+                                    <div class="card-body">
+                                        <p class="small mb-0">WordPress</p>
+                                        <p class="fz-15"><a class="text-decoration-none"
+                                                href="shop-item.html">Интернет-магазин мебели</a></p>
+                                        <div class="d-flex justify-content-between py-3">
+                                            <p class="small">№123456</p>
+                                            <p class="small">6900 руб.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row gy-2">
+                                            <div class="col-lg-12">
+                                                <a class="btn btn-primary w-100" href="shop-item.html">Подробнее</a>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <a class="btn btn-outline w-100" href="#">Демо</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Item -->
+                            <div class="col pb-3">
+                                <article class="card card-shop-item shadow h-100">
+                                    <a class="hover-shine" href="shop-item.html">
+                                        <img class="card-img-top" src="img/shop-item-01.png" alt="">
+                                    </a>
+                                    <div class="card-body">
+                                        <p class="small mb-0">WordPress</p>
+                                        <p class="fz-15"><a class="text-decoration-none"
+                                                href="shop-item.html">Интернет-магазин мебели</a></p>
+                                        <div class="d-flex justify-content-between py-3">
+                                            <p class="small">№123456</p>
+                                            <p class="small">6900 руб.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row gy-2">
+                                            <div class="col-lg-12">
+                                                <a class="btn btn-primary w-100" href="shop-item.html">Подробнее</a>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <a class="btn btn-outline w-100" href="#">Демо</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Item -->
+                            <div class="col pb-3">
+                                <article class="card card-shop-item shadow h-100">
+                                    <a class="hover-shine" href="shop-item.html">
+                                        <img class="card-img-top" src="img/shop-item-01.png" alt="">
+                                    </a>
+                                    <div class="card-body">
+                                        <p class="small mb-0">WordPress</p>
+                                        <p class="fz-15"><a class="text-decoration-none"
+                                                href="shop-item.html">Интернет-магазин мебели</a></p>
+                                        <div class="d-flex justify-content-between py-3">
+                                            <p class="small">№123456</p>
+                                            <p class="small">6900 руб.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row gy-2">
+                                            <div class="col-lg-12">
+                                                <a class="btn btn-primary w-100" href="shop-item.html">Подробнее</a>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <a class="btn btn-outline w-100" href="#">Демо</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
                             </div>
                         </div>
-                    </div>
-                </div> -->
-                <div class="row gy-4">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card card-shop-item shadow mt-4">
-                            <a class="hover-shine" href="shop-item.html">
-                                <img class="card-img" src="img/shop-item-01.png" alt="">
-                            </a>
-                            <div class="card-body">
-                                <p class="small mb-0">WordPress</p>
-                                <p class="fz-15">Интернет-магазин мебели</p>
-                                <div class="d-flex justify-content-between py-3">
-                                    <p class="small">№123456</p>
-                                    <p class="small">6900 руб.</p>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="row gy-2">
-                                    <div class="col-lg-6">
-                                        <a class="btn btn-primary w-100" href="shop-item.html">Подробнее</a>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <a class="btn btn-outline w-100" href="#">Демо</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card card-shop-item shadow mt-4">
-                            <a class="hover-shine" href="shop-item.html">
-                                <img class="card-img" src="img/shop-item-02.png" alt="">
-                            </a>
-                            <div class="card-body">
-                                <p class="small mb-0">Bootstrap 5</p>
-                                <p class="fz-15">Интернет-магазин мебели</p>
-                                <div class="d-flex justify-content-between py-3">
-                                    <p class="small">№123456</p>
-                                    <p class="small">6900 руб.</p>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="row gy-2">
-                                    <div class="col-lg-6">
-                                        <a class="btn btn-primary w-100" href="shop-item.html">Подробнее</a>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <a class="btn btn-outline w-100" href="#">Демо</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card card-shop-item shadow mt-4">
-                            <a class="hover-shine" href="shop-item.html">
-                                <img class="card-img" src="img/shop-item-02.png" alt="">
-                            </a>
-                            <div class="card-body">
-                                <p class="small mb-0">React JS</p>
-                                <p class="fz-15">Интернет-магазин мебели</p>
-                                <div class="d-flex justify-content-between py-3">
-                                    <p class="small">№123456</p>
-                                    <p class="small">6900 руб.</p>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="row gy-2">
-                                    <div class="col-lg-6">
-                                        <a class="btn btn-primary w-100" href="shop-item.html">Подробнее</a>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <a class="btn btn-outline w-100" href="#">Демо</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card card-shop-item shadow mt-4">
-                            <a class="hover-shine" href="shop-item.html">
-                                <img class="card-img" src="img/shop-item-01.png" alt="">
-                            </a>
-                            <div class="card-body">
-                                <p class="small mb-0">WordPress</p>
-                                <p class="fz-15">Интернет-магазин мебели</p>
-                                <div class="d-flex justify-content-between py-3">
-                                    <p class="small">№123456</p>
-                                    <p class="small">6900 руб.</p>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="row gy-2">
-                                    <div class="col-lg-6">
-                                        <a class="btn btn-primary w-100" href="shop-item.html">Подробнее</a>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <a class="btn btn-outline w-100" href="#">Демо</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card card-shop-item shadow mt-4">
-                            <a class="hover-shine" href="shop-item.html">
-                                <img class="card-img" src="img/shop-item-01.png" alt="">
-                            </a>
-                            <div class="card-body">
-                                <p class="small mb-0">WordPress</p>
-                                <p class="fz-15">Интернет-магазин мебели</p>
-                                <div class="d-flex justify-content-between py-3">
-                                    <p class="small">№123456</p>
-                                    <p class="small">6900 руб.</p>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="row gy-2">
-                                    <div class="col-lg-6">
-                                        <a class="btn btn-primary w-100" href="shop-item.html">Подробнее</a>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <a class="btn btn-outline w-100" href="#">Демо</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card card-shop-item shadow mt-4">
-                            <a class="hover-shine" href="shop-item.html">
-                                <img class="card-img" src="img/shop-item-02.png" alt="">
-                            </a>
-                            <div class="card-body">
-                                <p class="small mb-0">WordPress</p>
-                                <p class="fz-15">Интернет-магазин мебели</p>
-                                <div class="d-flex justify-content-between py-3">
-                                    <p class="small">№123456</p>
-                                    <p class="small">6900 руб.</p>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="row gy-2">
-                                    <div class="col-lg-6">
-                                        <a class="btn btn-primary w-100" href="shop-item.html">Подробнее</a>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <a class="btn btn-outline w-100" href="#">Демо</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card card-shop-item shadow mt-4">
-                            <a class="hover-shine" href="shop-item.html">
-                                <img class="card-img" src="img/shop-item-02.png" alt="">
-                            </a>
-                            <div class="card-body">
-                                <p class="small mb-0">WordPress</p>
-                                <p class="fz-15">Интернет-магазин мебели</p>
-                                <div class="d-flex justify-content-between py-3">
-                                    <p class="small">№123456</p>
-                                    <p class="small">6900 руб.</p>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="row gy-2">
-                                    <div class="col-lg-6">
-                                        <a class="btn btn-primary w-100" href="shop-item.html">Подробнее</a>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <a class="btn btn-outline w-100" href="#">Демо</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card card-shop-item shadow mt-4">
-                            <a class="hover-shine" href="shop-item.html">
-                                <img class="card-img" src="img/shop-item-01.png" alt="">
-                            </a>
-                            <div class="card-body">
-                                <p class="small mb-0">WordPress</p>
-                                <p class="fz-15">Интернет-магазин мебели</p>
-                                <div class="d-flex justify-content-between py-3">
-                                    <p class="small">№123456</p>
-                                    <p class="small">6900 руб.</p>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="row gy-2">
-                                    <div class="col-lg-6">
-                                        <a class="btn btn-primary w-100" href="shop-item.html">Подробнее</a>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <a class="btn btn-outline w-100" href="#">Демо</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card card-shop-item shadow mt-4">
-                            <a class="hover-shine" href="shop-item.html">
-                                <img class="card-img" src="img/shop-item-01.png" alt="">
-                            </a>
-                            <div class="card-body">
-                                <p class="small mb-0">WordPress</p>
-                                <p class="fz-15">Интернет-магазин мебели</p>
-                                <div class="d-flex justify-content-between py-3">
-                                    <p class="small">№123456</p>
-                                    <p class="small">6900 руб.</p>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="row gy-2">
-                                    <div class="col-lg-6">
-                                        <a class="btn btn-primary w-100" href="shop-item.html">Подробнее</a>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <a class="btn btn-outline w-100" href="#">Демо</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- Pagination -->
+                        <nav class="mt-2 mt-md-4" aria-label="Page navigation">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item">
+                                    <a href="#" class="page-link">
+                                        <i class="bx bx-chevron-left mx-n1"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item disabled d-md-none">
+                                    <span class="page-link text-body">2 / 4</span>
+                                </li>
+                                <li class="page-item d-none d-md-block">
+                                    <a href="#" class="page-link">1</a>
+                                </li>
+                                <li class="page-item active d-none d-md-block" aria-current="page">
+                                    <span class="page-link">
+                                        2
+                                        <span class="visually-hidden">(current)</span>
+                                    </span>
+                                </li>
+                                <li class="page-item d-none d-md-block">
+                                    <a href="#" class="page-link">3</a>
+                                </li>
+                                <li class="page-item d-none d-md-block">
+                                    <a href="#" class="page-link">4</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="#" class="page-link">
+                                        <i class="bx bx-chevron-right mx-n1"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -356,7 +537,8 @@
                         </ul>
                     </div>
                     <div class="mt-3">
-                        <p class="text-uppercase color-blue"><span class="d-block d-lg-inline">Закажите создание</span> и продвижение сайта</p>
+                        <p class="text-uppercase color-blue"><span class="d-block d-lg-inline">Закажите создание</span>
+                            и продвижение сайта</p>
                     </div>
                 </div>
             </div>
@@ -370,7 +552,8 @@
             </div>
             <div class="row gy-2 py-4 align-items-end">
                 <div class="col-lg-6 text-center text-lg-end order-lg-2">
-                    <p><a class="text-decoration-none" href="mailto:support@startsite.studio">support@startsite.studio</a></p>
+                    <p><a class="text-decoration-none"
+                            href="mailto:support@startsite.studio">support@startsite.studio</a></p>
                     <p><a class="text-decoration-none" href="tel:+74951595901">+7 (495) 159-59-01</a></p>
                 </div>
                 <div class="col-lg-6 text-center text-lg-start order-lg-1">
@@ -421,7 +604,8 @@
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="ex-check-2" checked>
-                            <label class="form-check-label small color-grey" for="ex-check-2">Я согласен(а) с <a class="link-grey" href="policy.html" target="_blank">политикой обработки
+                            <label class="form-check-label small color-grey" for="ex-check-2">Я согласен(а) с <a
+                                    class="link-grey" href="policy.html" target="_blank">политикой обработки
                                     персональных данных</a></label>
                         </div>
                         <div class="text-center mt-4">
@@ -462,9 +646,9 @@
     <!-- Cookie alert box -->
     <div class="alert dark-mode alert-black fade show text-center position-fixed start-0 bottom-0 z-index-1030 w-100"
         role="alert">
-        <p class="mb-0">🍪 Этот веб-сайт использует cookie. <a href="policy.html" target="_blank">Подробнее</a> <button type="button"
-                class="btn btn-secondary btn-sm align-baseline ms-2 mt-2 mt-sm-0" data-bs-dismiss="alert" aria-label="Close"><span
-                    aria-hidden="true">Ок</span></button>
+        <p class="mb-0">🍪 Этот веб-сайт использует cookie. <a href="policy.html" target="_blank">Подробнее</a> <button
+                type="button" class="btn btn-secondary btn-sm align-baseline ms-2 mt-2 mt-md-0" data-bs-dismiss="alert"
+                aria-label="Close"><span aria-hidden="true">Ок</span></button>
         </p>
     </div>
 
