@@ -946,19 +946,19 @@ img {
 
 .swiper .btn-prev,
 .swiper .btn-next {
-    --btn-icon-size: 3rem;
-    --bs-btn-font-size: 1.75rem;
-    --bs-btn-color: rgba(18, 14, 30, .95);
-    --bs-btn-bg: transparent;
-    --bs-btn-border-color: rgba(18, 14, 30, .95);
-    --bs-btn-hover-color: rgba(18, 14, 30, .95);
-    --bs-btn-hover-bg: transparent;
-    --bs-btn-hover-border-color: rgba(18, 14, 30, .5);
-    --bs-btn-active-color: rgba(18, 14, 30, .95);
-    --bs-btn-active-bg: transparent;
+    --btn-icon-size: 2rem;
+    --bs-btn-font-size: 1.5rem;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--color-black);
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--color-black);
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--color-black);
     --bs-btn-active-border-color: transparent;
-    --bs-btn-disabled-color: rgba(18, 14, 30, .95);
-    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--color-black);
     --bs-btn-disabled-border-color: transparent;
     position: absolute;
     top: 50%;
@@ -1244,6 +1244,20 @@ img-comparison-slider {
 
 @media (min-width: 992px) {
 
+    .offcanvas-collapse {
+        background-color: transparent;
+        bottom: auto!important;
+        display: block;
+        height: auto!important;
+        left: auto!important;
+        position: static;
+        right: auto!important;
+        top: auto!important;
+        transform: none!important;
+        visibility: visible;
+        width: 100%!important;
+    }
+
     .w-lg-auto {
         width: auto !important;
     }
@@ -1282,8 +1296,8 @@ img-comparison-slider {
 
     .swiper .btn-prev,
     .swiper .btn-next {
-        --btn-icon-size: 3.25rem;
-        --bs-btn-font-size: 2rem;
+        --btn-icon-size: 2.5rem;
+        --bs-btn-font-size: 1.75rem;
         opacity: 0;
     }
 
@@ -1331,7 +1345,7 @@ img-comparison-slider {
 
     .swiper .btn-prev:hover,
     .swiper .btn-next:hover {
-        color: rgba(18, 14, 30, .5);
+        background-color: var(--color-blue);
     }
 }
 
