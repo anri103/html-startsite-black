@@ -37,9 +37,9 @@ const portfolioSwiper = new Swiper('.portfolioSwiper', {
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: 2,
-    autoplay: {
-        delay: 3500,
-    },
+    // autoplay: {
+    //     delay: 3500,
+    // },
     coverflowEffect: {
         rotate: 0,
         stretch: 0,
