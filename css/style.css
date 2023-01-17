@@ -564,6 +564,11 @@ img {
     background-size: cover;
 }
 
+.bg-top-auto {
+    background-position: 50% 0;
+    background-size: auto;
+}
+
 .color-black {
     color: var(--color-black);
 }
@@ -1000,14 +1005,6 @@ img {
     z-index: -1;
 }
 
-.tilt-3d {
-    transform-style: preserve-3d;
-}
-
-.tilt-3d .tilt-3d-inner {
-    transform: translateZ(2rem);
-}
-
 .scroll-box {
     position: relative;
 }
@@ -1243,6 +1240,11 @@ img-comparison-slider {
 }
 
 @media (min-width: 992px) {
+
+    .bg-lg-center-cover {
+        background-position: 50% 50%;
+        background-size: cover;
+    }
 
     .offcanvas-collapse {
         background-color: transparent;

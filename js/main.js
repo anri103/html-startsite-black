@@ -23,6 +23,9 @@ scrollBtn.addEventListener('click', () => {
 // [ Слайдеры на странице index.html ]
 
 const heroSwiper = new Swiper('.heroSwiper', {
+    autoplay: {
+        delay: 3500,
+    },
     navigation: {
         nextEl: '#heroSwiper-next',
         prevEl: '#heroSwiper-prev',
@@ -35,7 +38,7 @@ const portfolioSwiper = new Swiper('.portfolioSwiper', {
     centeredSlides: true,
     slidesPerView: 2,
     autoplay: {
-        delay: 4000,
+        delay: 3500,
     },
     coverflowEffect: {
         rotate: 0,
@@ -54,7 +57,7 @@ const testimonialSwiper = new Swiper('.testimonialSwiper', {
     loop: true,
     spaceBetween: 20,
     autoplay: {
-        delay: 4000,
+        delay: 3500,
     },
     pagination: {
         el: '.swiper-pagination',
@@ -70,6 +73,25 @@ const relatedPosts = new Swiper('.relatedPosts', {
     navigation: {
         nextEl: '#relatedPosts-next',
         prevEl: '#relatedPosts-prev',
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 3,
+        },
+    },
+});
+
+//////////////////////////////////////////////////////////////////
+// [ Слайдер на странице shop-item.html ]
+
+const relatedProducts = new Swiper('.relatedProducts', {
+    slidesPerView: 1,
+    navigation: {
+        nextEl: '#relatedProducts-next',
+        prevEl: '#relatedProducts-prev',
     },
     breakpoints: {
         768: {
