@@ -23,6 +23,7 @@ scrollBtn.addEventListener('click', () => {
 // [ Слайдеры на странице index.html ]
 
 const heroSwiper = new Swiper('.heroSwiper', {
+    loop: true,
     autoplay: {
         delay: 3500,
     },
