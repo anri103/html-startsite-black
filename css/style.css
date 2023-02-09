@@ -725,7 +725,7 @@ img {
 
 .navbar {
     --bs-navbar-padding-x: 0;
-    --bs-navbar-padding-y: .5rem;
+    --bs-navbar-padding-y: 1rem;
     --bs-navbar-color: var(--color-black);
     --bs-navbar-hover-color: var(--color-blue);
     --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
