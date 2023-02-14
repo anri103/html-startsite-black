@@ -16,79 +16,82 @@
 
 <body>
 
-    <!-- SALE BANNER -->
-    <div class="overflow-hidden bg-color-black">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-md-2 col-lg-4">
-                    <div class="d-flex align-items-center justify-content-start">
-                        <img class="top-sale-image-1" src="img/sale-01.png" alt="">
-                        <img class="top-sale-image-2 d-none d-lg-block" src="img/sale-02.png" alt="">
+    <!-- sticky header -->
+    <div class="sticky-heading sticky-top top-0">
+        <!-- SALE BANNER -->
+        <div class="overflow-hidden bg-color-black">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-2 col-lg-4">
+                        <div class="d-flex align-items-center justify-content-start">
+                            <img class="top-sale-image-1" src="img/sale-01.png" alt="">
+                            <img class="top-sale-image-2 d-none d-lg-block" src="img/sale-02.png" alt="">
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-8 col-lg-4">
-                    <div class="d-flex align-items-center justify-content-center py-1 py-md-2 py-lg-3">
-                        <span class="fz-2 text-uppercase color-white">Акции месяца!</span>
-                        <a class="btn btn-sale-1 ms-4" href="promotion.html">Узнать</a>
+                    <div class="col-md-8 col-lg-4">
+                        <div class="d-flex align-items-center justify-content-center py-1 py-md-2 py-lg-3">
+                            <span class="fz-2 text-uppercase color-white">Акции месяца!</span>
+                            <a class="btn btn-sale-1 ms-4" href="promotion.html">Узнать</a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-2 col-lg-4">
-                    <div class="d-flex align-items-center justify-content-end">
-                        <img class="top-sale-image-3 d-none d-lg-block" src="img/sale-03.png" alt="">
-                        <img class="top-sale-image-4" src="img/sale-04.png" alt="">
+                    <div class="col-md-2 col-lg-4">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <img class="top-sale-image-3 d-none d-lg-block" src="img/sale-03.png" alt="">
+                            <img class="top-sale-image-4" src="img/sale-04.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Меню -->
-    <header class="header bg-white sticky-top top-0">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
+        <!-- Меню -->
+        <header class="header bg-white">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
 
-                <a class="navbar-brand logo hover-opacity" href="index.html">
-                    <img src="img/logo-black.svg" alt="">
-                </a>
+                    <a class="navbar-brand logo hover-opacity" href="index.html">
+                        <img src="img/logo-black.svg" alt="">
+                    </a>
 
-                <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
 
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarNav">
-                    <div class="offcanvas-header justify-content-end">
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarNav">
+                        <div class="offcanvas-header justify-content-end">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Создание сайтов</a></li>
+                                <li class="nav-item"><a class="nav-link" href="about.html">Веб-студия</a></li>
+                                <li class="nav-item"><a class="nav-link" href="cases.html">Кейсы</a></li>
+                                <!-- <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                                        aria-current="page">Услуги</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Пункт 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Пункт 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Пункт 3</a></li>
+                                    </ul>
+                                </li> -->
+                                <li class="nav-item"><a class="nav-link" href="shop.html">Шаблоны</a></li>
+                                <li class="nav-item"><a class="nav-link active" href="promotion.html">Акции</a></li>
+                                <li class="nav-item"><a class="nav-link" href="blog.html">Блог</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Создание сайтов</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">Веб-студия</a></li>
-                            <li class="nav-item"><a class="nav-link" href="cases.html">Кейсы</a></li>
-                            <!-- <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                                    aria-current="page">Услуги</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Пункт 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Пункт 2</a></li>
-                                    <li><a class="dropdown-item" href="#">Пункт 3</a></li>
-                                </ul>
-                            </li> -->
-                            <li class="nav-item"><a class="nav-link" href="shop.html">Шаблоны</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="promotion.html">Акции</a></li>
-                            <li class="nav-item"><a class="nav-link" href="blog.html">Блог</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
-                        </ul>
-                    </div>
+
+                    <a class="fw-bold text-decoration-none d-none d-xl-inline-flex ms-4" href="tel:+74951595901">+7 (495) 159-59-01</a>
+
                 </div>
-
-                <a class="fw-bold text-decoration-none d-none d-xl-inline-flex ms-4" href="tel:+74951595901">+7 (495) 159-59-01</a>
-
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
+    </div>
 
     <!-- Контент -->
     <main class="main">
