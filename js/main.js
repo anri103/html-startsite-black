@@ -24,8 +24,8 @@ scrollBtn.addEventListener('click', () => {
 
 window.onscroll = function() {
     const windowScroll = window.scrollY;
-	const fixedMenu = document.querySelector('.header.fixed-top');
-    if(windowScroll > 100) {
+	const fixedMenu = document.querySelector('.header.sticky-top');
+    if(windowScroll > 200) {
         fixedMenu.style.boxShadow = '0 .125rem .25rem rgba(33,37,41,0.075)';
     }
     else {
