@@ -712,9 +712,9 @@ img {
     z-index: 1030;
 }
 
-.sticky-top {
+/* .sticky-top {
     position: static;
-}
+} */
 
 .dropdown-toggle::after {
     content: '\ea4a';
@@ -993,7 +993,7 @@ img {
 [ MAIN CONTENT ]*/
 
 .main {
-    padding: 3rem 0 0;
+    padding: 0;
 }
 
 .dark-mode {
@@ -1367,12 +1367,12 @@ img-comparison-slider {
         width: auto !important;
     }
 
-    .sticky-top {
+    /* .sticky-top {
         position: -webkit-sticky;
         position: sticky;
         top: 80px;
         z-index: 1020;
-    }
+    } */
 
     #navbarNav .offcanvas-body {
         background: none;
