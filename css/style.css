@@ -161,39 +161,6 @@ h6,
     }
 }
 
-@media (min-width: 2560px) {
-
-    h1,
-    .h1 {
-        font-size: 4rem;
-    }
-
-    h2,
-    .h2 {
-        font-size: 3.2rem;
-    }
-
-    h3,
-    .h3 {
-        font-size: 2.1rem;
-    }
-
-    h4,
-    .h4 {
-        font-size: 2.1rem;
-    }
-
-    h5,
-    .h5 {
-        font-size: 1.8rem;
-    }
-
-    h6,
-    .h6 {
-        font-size: 1.8rem;
-    }
-}
-
 /*//////////////////////////////////////////////////////////////////
 [ LINKS ]*/
 
@@ -561,57 +528,78 @@ img {
     font-weight: 700;
 }
 
-.fz-12 {
+.fs-12 {
+    font-size: 0.75rem;
+}
+
+.fs-13 {
+    font-size: 0.8125rem;
+}
+
+.fs-16 {
     font-size: 1rem;
 }
 
-.fz-15 {
+.fs-18 {
+    font-size: 1.125rem;
+}
+
+.fs-20 {
     font-size: 1.25rem;
 }
 
-.fz-17 {
+.fs-24 {
     font-size: 1.5rem;
 }
 
-.fz-2 {
+.fs-28 {
     font-size: 1.75rem;
+}
+
+.fs-32 {
+    font-size: 2rem;
+}
+
+.fs-34 {
+    font-size: 2.125rem;
 }
 
 @media (min-width: 992px) {
 
-    .fz-12 {
+    .fs-lg-12 {
+        font-size: 0.75rem;
+    }
+    
+    .fs-lg-13 {
+        font-size: 0.8125rem;
+    }
+
+    .fs-lg-16 {
+        font-size: 1rem;
+    }
+
+    .fs-lg-18 {
+        font-size: 1.125rem;
+    }
+
+    .fs-lg-20 {
         font-size: 1.25rem;
     }
 
-    .fz-15 {
+    .fs-lg-24 {
         font-size: 1.5rem;
     }
 
-    .fz-17 {
+    .fs-lg-28 {
         font-size: 1.75rem;
     }
 
-    .fz-2 {
+    .fs-lg-32 {
         font-size: 2rem;
     }
-}
 
-@media (min-width: 2560px) {
-
-    .fz-12 {
-        font-size: 2.5rem;
-    }
-
-    .fz-15 {
-        font-size: 3.5rem;
-    }
-
-    .fz-17 {
-        font-size: 3.75rem;
-    }
-
-    .fz-2 {
-        font-size: 4rem;
+    .fs-lg-34 {
+        font-size: 2.125rem;
     }
 }
 
@@ -712,9 +700,9 @@ img {
     z-index: 1030;
 }
 
-/* .sticky-top {
+.sticky-top {
     position: static;
-} */
+}
 
 .dropdown-toggle::after {
     content: '\ea4a';
@@ -1367,12 +1355,12 @@ img-comparison-slider {
         width: auto !important;
     }
 
-    /* .sticky-top {
+    .sticky-top {
         position: -webkit-sticky;
         position: sticky;
         top: 80px;
         z-index: 1020;
-    } */
+    }
 
     #navbarNav .offcanvas-body {
         background: none;
@@ -1458,59 +1446,12 @@ img-comparison-slider {
 
 @media (min-width: 2560px) {
 
-    body {
-        font-size: 1.8rem;
-    }
-
     .container,
     .container-lg,
     .container-md,
     .container-sm,
     .container-xl,
     .container-xxl {
-        max-width: 90%;
-    }
-
-    .btn {
-        font-size: 2rem;
-    }
-
-    .nav-link {
-        font-size: 1.8rem;
-    }
-
-    .nav-pills .nav-link {
-        font-size: 2rem;
-    }
-
-    .logo {
-        width: 250px;
-    }
-
-    .logo>img {
-        width: 100%;
-    }
-
-    .navbar-nav .nav-link {
-        font-size: 2rem;
-        font-weight: var(--fw-semibold);
-    }
-
-    .navbar-nav .dropdown-item {
-        font-size: 1.5rem;
-        font-weight: var(--fw-semibold);
-    }
-
-    .social-list>li>a {
-        padding: 0.5rem 0;
-    }
-
-    .form-control,
-    .form-select {
-        font-size: 1.8rem;
-    }
-
-    .accordion.accordion-faq .accordion-button::after {
-        margin-top: 2rem;
+        max-width: 1920px;
     }
 }
