@@ -326,6 +326,55 @@
             </div>
         </section>
 
+        <!-- CTA -->
+        <style>
+            .cta-promo {
+                position: relative;
+                border-radius: 40px;
+                overflow: hidden;
+            }
+            .cta-promo-img {
+                position: absolute;
+                top: 50%;
+                right: -150px;
+                transform: translateY(-40%);
+            }
+            @media (min-width: 768px) {
+                .cta-promo {
+                    overflow: visible;
+                }
+                .cta-promo-img {
+                    right: 16px;
+                }
+            }
+            @media (min-width: 992px) {
+                .cta-promo-img {
+                    right: 32px;
+                }
+            }
+            @media (min-width: 1200px) {
+                .cta-promo-img {
+                    right: 95px;
+                    transform: translateY(-70%);
+                }
+            }
+        </style>
+        <section class="section py-5 dark-mode bg-color-black color-white">
+            <div class="container">
+                <div class="cta-promo p-5 px-4 px-lg-5 bg-img" style="background-image: url('img/promo-bg-01.png');">
+                    <div class="row gy-4 align-items-center">
+                        <div class="col-lg-5 col-xl-6">
+                            <p class="h1"><span class="d-block d-xl-inline">Рассрочка</span> на сайт!</p>
+                        </div>
+                        <div class="col-lg-3 col-xl-2">
+                            <a class="btn btn-sale-2 fs-20 fs-lg-24" href="#">узнать</a>
+                        </div>
+                    </div>
+                    <img class="cta-promo-img" src="img/promo-img-01.png" alt="">
+                </div>
+            </div>
+        </section>
+
         <!-- Цены на создание сайтов под ключ  -->
         <section class="section py-5 dark-mode bg-color-black color-white bg-img bg-top-auto bg-lg-center-cover"
             style="background-image: url(img/bg-price.png);">
