@@ -1347,23 +1347,22 @@ img-comparison-slider {
 .cta-promo {
     position: relative;
     border-radius: 40px;
-    overflow: hidden;
 }
 
 .cta-promo-img {
     position: absolute;
     top: 50%;
-    right: -150px;
+    right: -90px;
     transform: translateY(-40%);
+    width: 250px;
 }
 
 @media (min-width: 768px) {
-    .cta-promo {
-        overflow: visible;
-    }
 
     .cta-promo-img {
         right: 16px;
+        transform: translateY(-50%);
+        width: 300px;
     }
 }
 
@@ -1376,7 +1375,7 @@ img-comparison-slider {
 @media (min-width: 1200px) {
     .cta-promo-img {
         right: 95px;
-        transform: translateY(-70%);
+        transform: translateY(-65%);
     }
 }
 
