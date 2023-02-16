@@ -600,7 +600,7 @@ img {
     .fs-lg-12 {
         font-size: 0.75rem;
     }
-    
+
     .fs-lg-13 {
         font-size: 0.8125rem;
     }
@@ -731,10 +731,6 @@ img {
     z-index: 1030;
 }
 
-.sticky-top {
-    position: static;
-}
-
 .dropdown-toggle::after {
     content: '\ea4a';
     font-family: "boxicons";
@@ -799,6 +795,10 @@ img {
 
 /*//////////////////////////////////////////////////////////////////
 [ HEADER ]*/
+
+.sticky-heading {
+    z-index: 1030;
+}
 
 /*//////////////////////////////////////////////////////////////////
 [ MENU ]*/
@@ -1344,6 +1344,46 @@ img-comparison-slider {
     }
 }
 
+.cta-promo {
+    position: relative;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.cta-promo-img {
+    position: absolute;
+    top: 50%;
+    right: -150px;
+    transform: translateY(-40%);
+}
+
+@media (min-width: 768px) {
+    .cta-promo {
+        overflow: visible;
+    }
+
+    .cta-promo-img {
+        right: 16px;
+    }
+}
+
+@media (min-width: 992px) {
+    .cta-promo-img {
+        right: 32px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cta-promo-img {
+        right: 95px;
+        transform: translateY(-70%);
+    }
+}
+
+.responsive-top {
+    top: 0;
+}
+
 
 /*//////////////////////////////////////////////////////////////////
 [ MEDIA ]*/
@@ -1384,13 +1424,6 @@ img-comparison-slider {
 
     .w-lg-auto {
         width: auto !important;
-    }
-
-    .sticky-top {
-        position: -webkit-sticky;
-        position: sticky;
-        top: 80px;
-        z-index: 1020;
     }
 
     #navbarNav .offcanvas-body {
@@ -1457,6 +1490,10 @@ img-comparison-slider {
     .img-comparison-slider--handle {
         width: 64px;
         height: 64px;
+    }
+
+    .responsive-top {
+        top: 180px;
     }
 }
 
