@@ -126,27 +126,6 @@
             </div>
         </section>
 
-        <style>
-            .avatar-img {
-                position: relative;
-            }
-            .avatar-img img {
-                width: 190px;
-                height: 190px;
-            }
-            .avatar-img img:last-child {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                opacity: 1;
-                transition: opacity 0.3s;
-            }
-            .avatar-img:hover img:last-child {
-                opacity: 0;
-            }
-        </style>
         <section class="section py-5">
             <div class="container-fluid">
                 <div class="row justify-content-center">
@@ -157,8 +136,9 @@
                 <div class="row">
                     <div class="col-md-6 col-lg-6">
                         <div class="memoji-avatar d-flex align-items-center justify-content-lg-center py-2">
-                            <!-- <img class="flex-shrink-0" src="img/about-memoji-01.png" alt=""> -->
-                            <div class="avatar-img"></div>
+                            <div class="avatar-container">
+                                <img src="img/about-memoji-01.png" alt="">
+                            </div>
                             <div class="ps-3">
                                 <p class="fs-20 fs-lg-24 fw-bold mb-0">Алексей</p>
                                 <p class="small">Вождь</p>
@@ -167,7 +147,9 @@
                     </div>
                     <div class="col-md-6 col-lg-6">
                         <div class="memoji-avatar d-flex align-items-center justify-content-lg-center py-5">
-                            <img class="flex-shrink-0" src="img/about-memoji-04.png" alt="">
+                            <div class="avatar-container">
+                                <img src="img/about-memoji-04.png" alt="">
+                            </div>
                             <div class="ps-3">
                                 <p class="fs-20 fs-lg-24 fw-bold mb-0">Юля</p>
                                 <p class="small">HR-директор</p>
@@ -176,7 +158,10 @@
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="memoji-avatar d-flex align-items-center justify-content-lg-center py-2">
-                            <img class="flex-shrink-0" src="img/about-memoji-02.png" alt="">
+                            <div class="avatar-container">
+                                <img src="img/sticker-02-01.webp" alt="">
+                                <img src="img/sticker-02-02.webp" alt="">
+                            </div>
                             <div class="ps-3">
                                 <p class="fs-20 fs-lg-24 fw-bold mb-0">Павел</p>
                                 <p class="small">Программист</p>
@@ -185,7 +170,9 @@
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="memoji-avatar d-flex align-items-center justify-content-lg-center py-5">
-                            <img class="flex-shrink-0" src="img/about-memoji-03.png" alt="">
+                            <div class="avatar-container">
+                                <img src="img/about-memoji-03.png" alt="">
+                            </div>
                             <div class="ps-3">
                                 <p class="fs-20 fs-lg-24 fw-bold mb-0">Юля</p>
                                 <p class="small">Дизайнер</p>
@@ -194,7 +181,10 @@
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="memoji-avatar d-flex align-items-center justify-content-lg-center py-2">
-                            <img class="flex-shrink-0" src="img/about-memoji-05.png" alt="">
+                            <div class="avatar-container">
+                                <img src="img/sticker-03-01.webp" alt="">
+                                <img src="img/sticker-03-02.webp" alt="">
+                            </div>
                             <div class="ps-3">
                                 <p class="fs-20 fs-lg-24 fw-bold mb-0">Александр</p>
                                 <p class="small">SEO-специалист</p>
@@ -203,7 +193,9 @@
                     </div>
                     <div class="col-md-6 col-lg-6">
                         <div class="memoji-avatar d-flex align-items-center justify-content-lg-center py-5">
-                            <img class="flex-shrink-0" src="img/about-memoji-06.png" alt="">
+                            <div class="avatar-container">
+                                <img src="img/about-memoji-06.png" alt="">
+                            </div>
                             <div class="ps-3">
                                 <p class="fs-20 fs-lg-24 fw-bold mb-0">Денис</p>
                                 <p class="small">Проектный менеджер</p>
@@ -212,7 +204,10 @@
                     </div>
                     <div class="col-md-6 col-lg-6">
                         <div class="memoji-avatar d-flex align-items-center justify-content-lg-center py-2">
-                            <img class="flex-shrink-0" src="img/about-memoji-07.png" alt="">
+                            <div class="avatar-container">
+                                <img src="img/sticker-04-01.webp" alt="">
+                                <img src="img/sticker-04-02.webp" alt="">
+                            </div>
                             <div class="ps-3">
                                 <p class="fs-20 fs-lg-24 fw-bold mb-0">Андрей</p>
                                 <p class="small">Верстальщик</p>
@@ -221,10 +216,9 @@
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="memoji-avatar d-flex align-items-center justify-content-lg-center py-5">
-                            <!-- <img class="flex-shrink-0" src="img/about-memoji-08.png" alt=""> -->
-                            <div class="avatar-img">
-                                <img src="img/sticker-lada-02.webp" alt="">
+                            <div class="avatar-container">
                                 <img src="img/sticker-lada-01.webp" alt="">
+                                <img src="img/sticker-lada-02.webp" alt="">
                             </div>
                             <div class="ps-3">
                                 <p class="fs-20 fs-lg-24 fw-bold mb-0">Лада</p>
@@ -234,7 +228,9 @@
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="memoji-avatar d-flex align-items-center justify-content-lg-center py-2">
-                            <img class="flex-shrink-0" src="img/about-memoji-09.png" alt="">
+                            <div class="avatar-container">
+                                <img src="img/about-memoji-09.png" alt="">
+                            </div>
                             <div class="ps-3">
                                 <p class="fs-20 fs-lg-24 fw-bold mb-0">Дмитрий</p>
                                 <p class="small">Менеджер по продажам</p>
@@ -243,7 +239,10 @@
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="memoji-avatar d-flex align-items-center justify-content-lg-center py-5">
-                            <img class="flex-shrink-0" src="img/about-memoji-10.png" alt="">
+                            <div class="avatar-container">
+                                <img src="img/sticker-01-01.webp" alt="">
+                                <img src="img/sticker-01-02.webp" alt="">
+                            </div>
                             <div class="ps-3">
                                 <p class="fs-20 fs-lg-24 fw-bold mb-0">Виктор</p>
                                 <p class="small">Менеджер по продажам</p>
