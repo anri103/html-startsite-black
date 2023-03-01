@@ -52,9 +52,9 @@ const portfolioSwiper = new Swiper('.portfolioSwiper', {
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: 2,
-    // autoplay: {
-    //     delay: 3500,
-    // },
+    autoplay: {
+        delay: 3500,
+    },
     coverflowEffect: {
         rotate: 0,
         stretch: 0,
@@ -63,6 +63,15 @@ const portfolioSwiper = new Swiper('.portfolioSwiper', {
         slideShadows: true,
     },
     loop: true,
+});
+
+const changeclientsSwiper = new Swiper('.changeclientsSwiper', {
+    loop: true,
+    allowTouchMove: false,
+    navigation: {
+        nextEl: '#changeclientsSwiper-next',
+        prevEl: '#changeclientsSwiper-prev',
+    },
 });
 
 //////////////////////////////////////////////////////////////////
