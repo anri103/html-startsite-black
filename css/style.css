@@ -1416,6 +1416,22 @@ img-comparison-slider {
     opacity: 1;
 }
 
+.text-gradient-animation {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    background-image: linear-gradient(to right, #117DFF 20%, #46A6F7 40%, #46A6F7 60%, #117DFF 80%);
+    background-size: 200% auto;
+    animation: text-gradient-animation 3s linear infinite;
+}
+
+@keyframes text-gradient-animation {
+    to {
+      background-position: 200% center;
+    }
+}
+
 
 /*//////////////////////////////////////////////////////////////////
 [ MEDIA ]*/
