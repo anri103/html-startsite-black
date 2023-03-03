@@ -315,102 +315,10 @@ textarea {
     --bs-btn-disabled-color: var(--color-white);
     --bs-btn-disabled-bg: transparent;
     --bs-btn-disabled-border-color: transparent;
+    --btn-shadow-pulse-color: #117DFF;
     background-image: linear-gradient(180deg, #117DFF, #3BC3E1, #3BC3E1, #117DFF);
     background-size: 100% 300%;
     background-position: 0 0;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, background-position 0.3s ease-in-out;
-}
-
-.btn-primary:hover {
-    background-position: 0 100%;
-}
-
-.btn-sale-1 {
-    --bs-btn-padding-x: 2rem;
-    --bs-btn-border-width: 0;
-    --bs-btn-color: #fff;
-    --bs-btn-bg: transparent;
-    --bs-btn-border-color: transparent;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: transparent;
-    --bs-btn-hover-border-color: transparent;
-    --bs-btn-focus-shadow-rgb: 226, 3, 56;
-    --bs-btn-active-color: var(--color-black);
-    --bs-btn-active-bg: transparent;
-    --bs-btn-active-border-color: transparent;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: transparent;
-    --btn-shadow-pulse-color: #CB34FF;
-    background-image: linear-gradient(180deg, #CB34FF, #DB3AC3, #DB3AC3, #CB34FF);
-    background-size: 100% 200%;
-    background-position: 0 0;
-    -webkit-animation: shadow-pulse 3s infinite;
-    animation: shadow-pulse 3s infinite;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, background-position 0.3s ease-in-out;
-}
-
-.btn-sale-1:hover {
-    background-position: 0 100%;
-}
-
-.btn-sale-2 {
-    --bs-btn-padding-x: 2rem;
-    --bs-btn-border-width: 0;
-    --bs-btn-color: #6934FF;
-    --bs-btn-bg: transparent;
-    --bs-btn-border-color: transparent;
-    --bs-btn-hover-color: #6934FF;
-    --bs-btn-hover-bg: transparent;
-    --bs-btn-hover-border-color: transparent;
-    --bs-btn-focus-shadow-rgb: 226, 3, 56;
-    --bs-btn-active-color: var(--color-black);
-    --bs-btn-active-bg: transparent;
-    --bs-btn-active-border-color: transparent;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #6934FF;
-    --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: transparent;
-    --btn-shadow-pulse-color: #93FF60;
-    background-image: linear-gradient(180deg, #60FFA0, #93FF60, #93FF60, #60FFA0);
-    background-size: 100% 200%;
-    background-position: 0 0;
-    -webkit-animation: shadow-pulse 3s infinite;
-    animation: shadow-pulse 3s infinite;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, background-position 0.3s ease-in-out;
-}
-
-.btn-sale-2:hover {
-    background-position: 0 100%;
-}
-
-@-webkit-keyframes shadow-pulse {
-    0% {
-        box-shadow: 0px 4px 21px var(--btn-shadow-pulse-color);
-    }
-
-    50% {
-        box-shadow: 0px 1px 5px var(--btn-shadow-pulse-color);
-    }
-
-    100% {
-        box-shadow: 0px 4px 21px var(--btn-shadow-pulse-color);
-    }
-}
-
-@keyframes shadow-pulse {
-    0% {
-        box-shadow: 0px 4px 21px var(--btn-shadow-pulse-color);
-    }
-
-    50% {
-        box-shadow: 0px 1px 5px var(--btn-shadow-pulse-color);
-    }
-
-    100% {
-        box-shadow: 0px 4px 21px var(--btn-shadow-pulse-color);
-    }
 }
 
 .btn-secondary {
@@ -472,6 +380,97 @@ textarea {
     --bs-btn-padding-y: 0.25rem;
     --bs-btn-font-size: 0.875rem;
     --bs-btn-border-radius: 0.25rem;
+}
+
+.btn-sale-1 {
+    --bs-btn-padding-x: 2rem;
+    --bs-btn-border-width: 0;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-focus-shadow-rgb: 226, 3, 56;
+    --bs-btn-active-color: var(--color-black);
+    --bs-btn-active-bg: transparent;
+    --bs-btn-active-border-color: transparent;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: transparent;
+    --btn-shadow-pulse-color: #CB34FF;
+    background-image: linear-gradient(180deg, #CB34FF, #DB3AC3, #DB3AC3, #CB34FF);
+    background-size: 100% 200%;
+    background-position: 0 0;
+}
+
+.btn-sale-2 {
+    --bs-btn-padding-x: 2rem;
+    --bs-btn-border-width: 0;
+    --bs-btn-color: #6934FF;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-color: #6934FF;
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-focus-shadow-rgb: 226, 3, 56;
+    --bs-btn-active-color: var(--color-black);
+    --bs-btn-active-bg: transparent;
+    --bs-btn-active-border-color: transparent;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #6934FF;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: transparent;
+    --btn-shadow-pulse-color: #93FF60;
+    background-image: linear-gradient(180deg, #60FFA0, #93FF60, #93FF60, #60FFA0);
+    background-size: 100% 200%;
+    background-position: 0 0;
+}
+
+.btn-gradient {
+    transition: background-position 0.3s ease-in-out;
+}
+
+.btn-gradient:hover {
+    background-position: 0 100%;
+}
+
+.btn-shadow-pulse {
+    -webkit-animation: shadow-pulse 3s infinite;
+    animation: shadow-pulse 3s infinite;
+}
+
+.btn-shadow-pulse:hover {
+    box-shadow: none !important;
+}
+
+@-webkit-keyframes shadow-pulse {
+    0% {
+        box-shadow: 0px 4px 21px var(--btn-shadow-pulse-color);
+    }
+
+    50% {
+        box-shadow: 0px 1px 5px var(--btn-shadow-pulse-color);
+    }
+
+    100% {
+        box-shadow: 0px 4px 21px var(--btn-shadow-pulse-color);
+    }
+}
+
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 0px 4px 21px var(--btn-shadow-pulse-color);
+    }
+
+    50% {
+        box-shadow: 0px 1px 5px var(--btn-shadow-pulse-color);
+    }
+
+    100% {
+        box-shadow: 0px 4px 21px var(--btn-shadow-pulse-color);
+    }
 }
 
 /*//////////////////////////////////////////////////////////////////
@@ -1090,7 +1089,7 @@ img {
 }
 
 .scroll-box::-webkit-scrollbar {
-    width: 1px;
+    width: 2px;
 }
 
 .scroll-box::-webkit-scrollbar-track {
