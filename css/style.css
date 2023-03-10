@@ -1433,6 +1433,28 @@ img-comparison-slider {
 }
 
 
+
+
+
+.opacity-wrap .opacity-item {
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+.opacity-wrap:hover .opacity-item:not(:hover) {
+    opacity: 0.65;
+}
+
+.img-hover-scale {
+    transform: scale(1);
+    transition: all 0.3s linear;
+}
+
+.img-hover-scale:hover {
+    transform: scale(1.05);
+}
+
+
 /*//////////////////////////////////////////////////////////////////
 [ MEDIA ]*/
 
