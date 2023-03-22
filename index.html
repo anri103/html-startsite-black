@@ -98,7 +98,7 @@
     <main class="main">
 
         <!-- HERO -->
-        <section class="section overflow-hidden frontpage-hero">
+        <section class="section overflow-hidden frontpage-hero d-none">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-10 text-center">
@@ -159,6 +159,40 @@
                     <button type="button" class="btn btn-icon btn-next rounded-circle m-2" id="heroSwiper-next">
                         <i class="bx bx-chevron-right"></i>
                     </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- HERO 02 -->
+        <style>
+            .section-hero-02 {
+                background: linear-gradient(90deg, #E8FCE5 0%, #AFF6E4 100%), linear-gradient(90deg, #FFF1E0 0%, #FFF6F1 51.04%, #FFDAF4 100%), #FFFFFF;
+            }
+            .mg-main-top2__title, .mg-main-top2__text {
+                line-height: 1.25;
+            }
+            .mg-main-top2__title br, .mg-main-top2__text br {
+                display: none;
+            }
+            @media (min-width: 768px) {
+                .mg-main-top2__title br, .mg-main-top2__text br {
+                    display: block;
+                }
+            }
+        </style>
+        <section class="section section-hero-02">
+            <div class="container">
+                <div class="row g-3 align-items-end">
+                    <div class="col-lg-6 text-center text-lg-start">
+                        <div class="py-lg-5">
+                            <div class="mg-main-top2__title fs-24 fs-lg-32 mb-3">День торговли!<br> –25% на разработку сайтов!</div>
+                            <div class="mg-main-top2__text fs-18 fs-lg-24 mb-3">При оплате сайта — 4 месяца обслуживания<br> В ПОДАРОК</div>
+                            <a class="btn btn-primary btn-gradient btn-lg" href="#mainForm" data-bs-toggle="modal" data-bs-target="#mainForm">Связаться</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="mx-auto" src="img/hero-image.png" alt="">
+                    </div>
                 </div>
             </div>
         </section>
