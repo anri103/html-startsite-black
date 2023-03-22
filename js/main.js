@@ -26,10 +26,10 @@ window.onscroll = function() {
     const windowScroll = window.scrollY;
 	const fixedMenu = document.querySelector('.sticky-heading');
     if(windowScroll > 200) {
-        fixedMenu.style.boxShadow = '0 .125rem .25rem rgba(33,37,41,0.075)';
+        fixedMenu.classList.add('shadow-sm');
     }
     else {
-        fixedMenu.style.boxShadow = 'none';
+        fixedMenu.classList.remove('shadow-sm');
     }
 }
 

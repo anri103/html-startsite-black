@@ -61,10 +61,8 @@ Version: 1.0
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
-
-/*------------------------------------------------------------------
-[ Custom Scrollbar ]*/
 
 html::-webkit-scrollbar {
     width: .5rem;
@@ -76,6 +74,14 @@ html::-webkit-scrollbar-track {
 
 html::-webkit-scrollbar-thumb {
     background-color: var(--color-blue);
+}
+
+body {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100%;
 }
 
 /*//////////////////////////////////////////////////////////////////
@@ -353,6 +359,48 @@ textarea {
     --bs-btn-disabled-color: var(--color-black);
     --bs-btn-disabled-bg: transparent;
     --bs-btn-disabled-border-color: var(--color-black);
+}
+
+.btn-black {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: #585464;
+    --bs-btn-hover-color: #46A6F7;
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color: #46A6F7;
+    --bs-btn-focus-shadow-rgb: 226, 3, 56;
+    --bs-btn-active-color: #46A6F7;
+    --bs-btn-active-bg: transparent;
+    --bs-btn-active-border-color: #46A6F7;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #46A6F7;
+    --btn-shadow-pulse-color: #117DFF;
+    background-image: linear-gradient(94.94deg, rgba(68, 64, 80, 0.71) -15.12%, rgba(18, 14, 30, 0.71) 135.14%);;
+    background-size: 100% 100%;
+    background-position: 0 0;
+}
+
+.btn-black-02 {
+    --bs-btn-color: #46A6F7;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: #585464;
+    --bs-btn-hover-color: #46A6F7;
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color: #46A6F7;
+    --bs-btn-focus-shadow-rgb: 226, 3, 56;
+    --bs-btn-active-color: #46A6F7;
+    --bs-btn-active-bg: transparent;
+    --bs-btn-active-border-color: #46A6F7;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #46A6F7;
+    --btn-shadow-pulse-color: #117DFF;
+    background-image: linear-gradient(94.94deg, rgba(68, 64, 80, 0.71) -15.12%, rgba(18, 14, 30, 0.71) 135.14%);
+    background-size: 100% 100%;
+    background-position: 0 0;
 }
 
 .btn-icon {
@@ -1011,7 +1059,8 @@ img {
 [ MAIN CONTENT ]*/
 
 .main {
-    padding: 0;
+    flex: 1 1 auto;
+    padding: calc(90px + 80px) 0 0;
 }
 
 .dark-mode {

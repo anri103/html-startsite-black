@@ -6,11 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="favicon.png" />
-    <title>cases-item</title>
+    <title>prices</title>
 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Паш, стили для этой страницы -->
+    <style>
+        .price-table .price-link {
+            text-decoration: none;
+        }
+
+        .price-table .price-item {
+            position: relative;
+            border: 1px solid;
+            border-color: #585464;
+            transition: border-color 0.3s ease;
+        }
+
+        .price-table .price-item:hover {
+            border-color: #46A6F7;
+        }
+
+        .price-table .price-item .price-description>* {
+            color: #8D9091;
+            margin-bottom: 0;
+        }
+
+        .price-table .price-link:nth-child(2n) .price-item {
+            background-color: #1C1828;
+        }
+
+        .price-table .price-link:first-child .price-item {
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+
+        .price-table .price-link:last-child .price-item {
+            border-bottom-right-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+        }
+    </style>
 
 </head>
 
@@ -31,7 +68,8 @@
                     <div class="col-md-8 col-lg-6">
                         <div class="d-flex align-items-center justify-content-center py-2 py-lg-3">
                             <span class="fs-24 fs-lg-32 text-uppercase color-white">Акции месяца!</span>
-                            <a class="btn btn-sale-1 btn-gradient btn-shadow-pulse ms-4 mt-2" href="promotion.html">Узнать</a>
+                            <a class="btn btn-sale-1 btn-gradient btn-shadow-pulse ms-4 mt-2"
+                                href="promotion.html">Узнать</a>
                         </div>
                     </div>
                     <div class="col">
@@ -62,15 +100,16 @@
 
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarNav">
                         <div class="offcanvas-header justify-content-end">
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item"><a class="nav-link" href="index.html">Создание сайтов</a></li>
                                 <li class="nav-item"><a class="nav-link" href="about.html">Веб-студия</a></li>
-                                <li class="nav-item"><a class="nav-link active" href="cases.html">Кейсы</a></li>
+                                <li class="nav-item"><a class="nav-link" href="cases.html">Кейсы</a></li>
                                 <li class="nav-item"><a class="nav-link" href="shop.html">Шаблоны</a></li>
-                                <li class="nav-item"><a class="nav-link" href="promotion.html">Акции</a></li>
+                                <li class="nav-item"><a class="nav-link active" href="promotion.html">Акции</a></li>
                                 <li class="nav-item"><a class="nav-link" href="blog.html">Блог</a></li>
                                 <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
                                 <!-- <li class="nav-item dropdown">
@@ -86,7 +125,8 @@
                         </div>
                     </div>
 
-                    <a class="fw-bold text-decoration-none d-none d-xl-inline-flex ms-4" href="tel:+74951595901">+7 (495) 159-59-01</a>
+                    <a class="fw-bold text-decoration-none d-none d-xl-inline-flex ms-4" href="tel:+74951595901">+7
+                        (495) 159-59-01</a>
 
                 </div>
             </nav>
@@ -102,37 +142,109 @@
                 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-                        <li class="breadcrumb-item"><a href="cases.html">Реализованные проекты</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Интернет-магазин для продажи дров</li>
+                        <li class="breadcrumb-item active" aria-current="page">Акции</li>
                     </ol>
                 </nav>
             </div>
         </section>
 
+        <!-- Заголовок -->
         <section class="section py-5 dark-mode bg-color-black color-white">
             <div class="container">
-                <div class="row gy-4 justify-content-between">
-                    <div class="col-lg-4">
-                        <div class="sticky-top responsive-top">
-                            <div class="mb-5">
-                                <p class="fs-20 fs-lg-24 fw-light mb-0">Клиент</p>
-                                <h1 class="h2 fw-bold">Интернет-магазин для продажи дров</h1>
-                            </div>
-                            <p class="fs-20 fs-lg-24">Что было сделано:</p>
-                            <div class="fw-light">
-                                <p>- Был выбран шаблон <a href="shop-item.html">№3445667</a> и заполнен по желанию заказчика в соответствии с  тематикой</p>
-                                <p>- Реализована заявочная система товаров. которая на этапе приёма заявки позволяет продавцу узнать какой конкретно товар хочет получить клиент и это без дополнительных действий от клиента. только номер телефона и имя</p>
-                                <p>- Проведена техническая подготовка шаблона под дальнейшее SEO продвижение</p>
-                                <p>- Оптимизировали работу сайта и сократили время  загрузки в половину, что в свою очередь улучшило пользовательский опыт клиентов и избежали уход клиента до загрузки страницы</p>
-                            </div>
-                        </div>
+                <div class="row g-3 align-items-center">
+                    <div class="col-lg-8 text-center text-lg-start">
+                        <h1 class="h1">Цены на создание сайтов</h1>
                     </div>
-                    <div class="col-lg-7">
-                        <!-- ................................................................................... -->
-                        <!-- ............................. Программисту на заметку ............................. -->
-                        <!-- Должна быть возможность добавлять кастомный код из админки, а не только изображение -->
-                        <!-- ................................................................................... -->
-                        <img class="w-100" src="img/case-about.png" alt="">
+                    <div class="col-lg-4 text-center text-lg-end">
+                        <a class="btn btn-black btn-lg" href="#"><svg width="32" height="32" viewBox="0 0 32 32"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7 26.3028V27.8397C7 28.4126 7.22756 28.962 7.63263 29.3671C8.0377 29.7723 8.5871 29.9999 9.16 30H25.84C26.4128 29.9999 26.9622 29.7723 27.3673 29.3673C27.7723 28.9622 27.9999 28.4128 28 27.84V9.5L20 2H9.16C8.58713 2 8.03773 2.22757 7.63265 2.63265C7.22757 3.03773 7 3.58713 7 4.16V15.2278C7 19.5625 7 18.9375 7 26.3028Z"
+                                    fill="#ECECF1" />
+                                <path
+                                    d="M28 9.93402L20 2V7.71966C20.0001 8.32442 20.2277 8.90438 20.6327 9.33201C21.0378 9.75963 21.5872 9.99992 22.16 10L28 9.93402Z"
+                                    fill="#D5D5DF" />
+                                <path
+                                    d="M4 17C4 15.8954 4.89543 15 6 15H23C24.1046 15 25 15.8954 25 17V24C25 25.1046 24.1046 26 23 26H6C4.89543 26 4 25.1046 4 24V17Z"
+                                    fill="url(#paint0_linear_289_3413)" />
+                                <path
+                                    d="M8.99672 18C9.40528 18 9.75894 18.0738 10.0577 18.2214C10.3608 18.369 10.5936 18.5786 10.7562 18.85C10.9187 19.1214 11 19.4429 11 19.8143C11 20.181 10.9187 20.5024 10.7562 20.7786C10.5936 21.05 10.3608 21.2595 10.0577 21.4071C9.75894 21.55 9.40528 21.6214 8.99672 21.6214H8.06755V22.6C8.06755 22.8209 7.90233 23 7.69852 23H7.36903C7.16522 23 7 22.8209 7 22.6V18.4C7 18.1791 7.16522 18 7.36903 18H8.99672ZM8.9374 20.6786C9.25811 20.6786 9.50193 20.6048 9.66887 20.4571C9.83581 20.3048 9.9193 20.0905 9.9193 19.8143C9.9193 19.5333 9.83581 19.319 9.66887 19.1714C9.50193 19.019 9.25811 18.9429 8.9374 18.9429H8.06755V20.6786H8.9374Z"
+                                    fill="white" />
+                                <path
+                                    d="M12 18.4C12 18.1791 12.178 18 12.3977 18H14.2585C14.7983 18 15.2741 18.1048 15.6861 18.3143C16.1027 18.519 16.4248 18.8095 16.652 19.1857C16.8841 19.5619 17 20 17 20.5C17 21 16.8841 21.4381 16.652 21.8143C16.4248 22.1905 16.1027 22.4833 15.6861 22.6929C15.2741 22.8976 14.7983 23 14.2585 23H12.3977C12.178 23 12 22.8209 12 22.6V18.4ZM14.2017 22.05C14.6988 22.05 15.0943 21.9119 15.3878 21.6357C15.6861 21.3548 15.8352 20.9762 15.8352 20.5C15.8352 20.0238 15.6861 19.6476 15.3878 19.3714C15.0943 19.0905 14.6988 18.95 14.2017 18.95H13.1505V22.05H14.2017Z"
+                                    fill="white" />
+                                <path
+                                    d="M19.2249 18.9286V20.25H21.2514C21.4852 20.25 21.6748 20.4291 21.6748 20.65V20.7786C21.6748 20.9995 21.4852 21.1786 21.2514 21.1786H19.2249V22.6C19.2249 22.8209 19.0354 23 18.8015 23H18.4234C18.1896 23 18 22.8209 18 22.6V18.4C18 18.1791 18.1896 18 18.4234 18H21.5766C21.8104 18 22 18.1791 22 18.4V18.5286C22 18.7495 21.8104 18.9286 21.5766 18.9286H19.2249Z"
+                                    fill="white" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_289_3413" x1="4" y1="20" x2="25" y2="20"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#BA0FAC" />
+                                        <stop offset="1" stop-color="#FF482F" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            Прайс-лист PDF</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Таблицы с ценами -->
+        <section class="section py-5 dark-mode bg-color-black color-white">
+            <div class="container">
+                <div class="mb-5">
+                    <div class="d-flex align-items-center px-0 px-lg-3 mb-4">
+                        <div class="flex-shrink-0 me-3">
+                            <img src="img/price-rocket.gif" alt="">
+                        </div>
+                        <p class="fs-24 fs-lg-32">Разработка одностраничных сайтов</p>
+                    </div>
+                    <div class="price-table">
+                        <a class="price-link" href="#mainForm" data-bs-toggle="modal" data-bs-target="#mainForm">
+                            <div class="price-item p-3 py-4 p-lg-4">
+                                <div class="row g-3 align-items-center justify-content-between">
+                                    <div class="col-lg-8">
+                                        <p class="fs-lg-24">Лендинг пейдж</p>
+                                        <div class="price-description">
+                                            <p>Сайт, который отлично подойдет для продажи одного товара либо одной
+                                                услуги. Состоит из 1 страницы. Его можно быстро запустить и
+                                                протестировать спрос с помощью контекстной рекламы в Яндекс.Директ.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 text-lg-center">
+                                        <span class="fs-24">7 900 ₽</span>
+                                    </div>
+                                    <div class="col-lg-2 text-lg-center">
+                                        <button type="button" class="btn btn-black-02 btn-lg"
+                                            style="position: relative; z-index: 5;" data-bs-toggle="modal"
+                                            data-bs-target="#mainForm">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="price-link" href="#mainForm" data-bs-toggle="modal" data-bs-target="#mainForm">
+                            <div class="price-item p-3 py-4 p-lg-4">
+                                <div class="row g-3 align-items-center justify-content-between">
+                                    <div class="col-lg-8">
+                                        <p class="fs-lg-24">Сайт-визитка</p>
+                                        <div class="price-description">
+                                            <p>Небольшой сайт, как правило, состоящий из одной (или нескольких)
+                                                веб-страниц и содержащий основную информацию об организации, частном
+                                                лице, компании, товарах или услугах, прейскуранты, контактные данные.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 text-lg-center">
+                                        <span class="fs-24">7 900 ₽</span>
+                                    </div>
+                                    <div class="col-lg-2 text-lg-center">
+                                        <button type="button" class="btn btn-black-02 btn-lg" data-bs-toggle="modal"
+                                            data-bs-target="#mainForm">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -164,7 +276,8 @@
                         </ul>
                     </div>
                     <div class="mt-3">
-                        <p class="text-uppercase color-blue"><span class="d-block d-lg-inline">Закажите создание</span> и продвижение сайта</p>
+                        <p class="text-uppercase color-blue"><span class="d-block d-lg-inline">Закажите создание</span>
+                            и продвижение сайта</p>
                     </div>
                 </div>
             </div>
@@ -178,7 +291,8 @@
             </div>
             <div class="row gy-2 py-4 align-items-end">
                 <div class="col-lg-6 text-center text-lg-end order-lg-2">
-                    <p><a class="text-decoration-none" href="mailto:support@startsite.studio">support@startsite.studio</a></p>
+                    <p><a class="text-decoration-none"
+                            href="mailto:support@startsite.studio">support@startsite.studio</a></p>
                     <p><a class="text-decoration-none" href="tel:+74951595901">+7 (495) 159-59-01</a></p>
                 </div>
                 <div class="col-lg-6 text-center text-lg-start order-lg-1">
@@ -229,7 +343,8 @@
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="ex-check-2" checked>
-                            <label class="form-check-label small color-grey" for="ex-check-2">Я согласен(а) с <a class="link-grey" href="policy.html" target="_blank">политикой обработки
+                            <label class="form-check-label small color-grey" for="ex-check-2">Я согласен(а) с <a
+                                    class="link-grey" href="policy.html" target="_blank">политикой обработки
                                     персональных данных</a></label>
                         </div>
                         <div class="text-center mt-4">
@@ -270,9 +385,9 @@
     <!-- Cookie alert box -->
     <div class="alert dark-mode alert-black fade show text-center position-fixed start-0 bottom-0 z-index-1030 w-100"
         role="alert">
-        <p class="mb-0">🍪 Этот веб-сайт использует cookie. <a href="policy.html" target="_blank">Подробнее</a> <button type="button"
-                class="btn btn-secondary btn-sm align-baseline ms-2 mt-2 mt-md-0" data-bs-dismiss="alert" aria-label="Close"><span
-                    aria-hidden="true">Ок</span></button>
+        <p class="mb-0">🍪 Этот веб-сайт использует cookie. <a href="policy.html" target="_blank">Подробнее</a> <button
+                type="button" class="btn btn-secondary btn-sm align-baseline ms-2 mt-2 mt-md-0" data-bs-dismiss="alert"
+                aria-label="Close"><span aria-hidden="true">Ок</span></button>
         </p>
     </div>
 
