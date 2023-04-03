@@ -61,7 +61,6 @@ Version: 1.0
 
 html {
     scroll-behavior: smooth;
-    height: 100%;
 }
 
 html::-webkit-scrollbar {
@@ -76,13 +75,13 @@ html::-webkit-scrollbar-thumb {
     background-color: var(--color-blue);
 }
 
-body {
+/* body {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: stretch;
     height: 100%;
-}
+} */
 
 /*//////////////////////////////////////////////////////////////////
 [ TYPOGRAPHY ]*/
@@ -678,6 +677,22 @@ img {
 
     .fs-lg-34 {
         font-size: 34px;
+    }
+
+    .fs-lg-38 {
+        font-size: 38px;
+    }
+
+    .fs-lg-42 {
+        font-size: 42px;
+    }
+
+    .fs-lg-48 {
+        font-size: 48px;
+    }
+
+    .fs-lg-52 {
+        font-size: 52px;
     }
 }
 
