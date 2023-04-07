@@ -19,9 +19,7 @@ scrollBtn.addEventListener('click', () => {
     });
 });
 
-//////////////////////////////////////////////////////////////////
-// [ Top Menu Shadow ]
-
+// Тень меню при скролле
 window.onscroll = function() {
     const windowScroll = window.scrollY;
 	const fixedMenu = document.querySelector('.sticky-heading');
@@ -51,7 +49,7 @@ const portfolioSwiper = new Swiper('.portfolioSwiper', {
     effect: 'coverflow',
     grabCursor: true,
     centeredSlides: true,
-    slidesPerView: 2,
+    slidesPerView: 1.05,
     autoplay: {
         delay: 3500,
     },
@@ -63,6 +61,15 @@ const portfolioSwiper = new Swiper('.portfolioSwiper', {
         slideShadows: true,
     },
     loop: true,
+    navigation: {
+        nextEl: '#portfolio-next',
+        prevEl: '#portfolio-prev',
+    },
+	breakpoints: {
+        768: {
+            slidesPerView: 2,
+        },
+    },
 });
 
 const changeclientsSwiper = new Swiper('.changeclientsSwiper', {
@@ -131,3 +138,42 @@ const relatedProducts = new Swiper('.relatedProducts', {
 // [ All Parallax ]
 
 for (var e = document.querySelectorAll('.parallax'), t = 0; t < e.length; t++) new Parallax(e[t]);
+
+//////////////////////////////////////////////////////////////////
+// [ PHONE MASK ]
+
+document.addEventListener('DOMContentLoaded', function () {
+	
+
+    var mask1 = document.getElementById('maskPhone1')
+	if( mask1 ){
+        const maskPhone1 = IMask(
+            mask1, {
+            mask: '+{7} (000) 000-00-00'
+        });
+    }
+
+    var mask2 = document.getElementById('maskPhone2')
+	if( mask2 ){
+        const maskPhone2 = IMask(
+            mask2, {
+            mask: '+{7} (000) 000-00-00'
+        });
+    }
+
+    var mask3 = document.getElementById('maskPhone3')
+	if( mask3 ){
+        const maskPhone3 = IMask(
+            mask2, {
+            mask: '+{7} (000) 000-00-00'
+        });
+    }
+	
+});
+
+//////////////////////////////////////////////////////////////////
+// [ Enable Fancybox ]
+
+Fancybox.bind("[data-fancybox]", {
+  // Your custom options
+});
