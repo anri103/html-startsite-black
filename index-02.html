@@ -44,25 +44,36 @@
     <div class="sticky-heading fixed-top">
 
         <!-- SALE BANNER -->
-        <div class="overflow-hidden bg-color-black" style="display: none;">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col">
-                        <div class="d-flex align-items-center justify-content-start">
-                            <img class="top-sale-image-1 d-none d-md-block" src="img/sale-01.png" alt="">
-                            <img class="top-sale-image-2 d-none d-xl-block" src="img/sale-02.png" alt="">
+        <div class="bg-color-black">
+            <div class="overflow-hidden">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <div class="d-flex align-items-center justify-content-start">
+                                <img class="top-sale-image-1"
+                                    src="img/sale-01.png" alt="">
+                                <img class="top-sale-image-2 d-none d-xl-block"
+                                    src="img/sale-02.png" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-8 col-lg-6">
-                        <div class="d-flex align-items-center justify-content-center py-2 py-lg-3">
-                            <span class="fs-24 fs-lg-32 text-uppercase color-white">Акции месяца!</span>
-                            <a class="btn btn-sale-1 btn-gradient btn-shadow-pulse ms-4 mt-2" href="promotion.html">Узнать</a>
+                        <div class="col-8 col-lg-6">
+                            <div class="d-flex align-items-center justify-content-center py-2 py-lg-3">
+
+                                <span class="fs-24 fs-lg-32 text-uppercase color-white">Акции <span
+                                        class="d-none d-md-inline">месяца!</span></span>
+
+                                <a class="btn btn-sale-1 btn-gradient btn-shadow-pulse ms-4 mb-2 mb-md-0 mt-2"
+                                    href="promotion.html">Узнать</a>
+
+                            </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="d-flex align-items-center justify-content-end">
-                            <img class="top-sale-image-3 d-none d-xl-block" src="img/sale-03.png" alt="">
-                            <img class="top-sale-image-4 d-none d-md-block" src="img/sale-04.png" alt="">
+                        <div class="col">
+                            <div class="d-flex align-items-center justify-content-end">
+                                <img class="top-sale-image-3 d-none d-xl-block"
+                                    src="img/sale-03.png" alt="">
+                                <img class="top-sale-image-4"
+                                    src="img/sale-04.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -86,29 +97,69 @@
                     </button>
 
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarNav">
-                        <div class="offcanvas-header justify-content-end">
+
+                        <div class="offcanvas-header" style="border-bottom: 1px solid #f5f5f5;">
+                            <a class="navbar-brand logo hover-opacity" href="index.html">
+                                <img src="img/logo-black.svg" alt="">
+                            </a>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
+
                         <div class="offcanvas-body">
-                            <ul class="navbar-nav ms-auto">
+                            <ul class="navbar-nav ms-auto mb-4 mb-lg-0">
                                 <li class="nav-item"><a class="nav-link active" href="index.html">Создание сайтов</a></li>
                                 <li class="nav-item"><a class="nav-link" href="about.html">Веб-студия</a></li>
-                                <li class="nav-item"><a class="nav-link" href="cases.html">Кейсы</a></li>
-                                <li class="nav-item"><a class="nav-link" href="shop.html">Шаблоны</a></li>
-                                <li class="nav-item"><a class="nav-link" href="promotion.html">Акции</a></li>
-                                <li class="nav-item"><a class="nav-link" href="blog.html">Блог</a></li>
-                                <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
-                                <!-- <li class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                                        aria-current="page">Услуги</a>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-current="page">Услуги</a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Пункт 1</a></li>
-                                        <li><a class="dropdown-item" href="#">Пункт 2</a></li>
-                                        <li><a class="dropdown-item" href="#">Пункт 3</a></li>
+                                        <li><a class="dropdown-item" href="prices.html">Пункт 1</a></li>
+                                        <li><a class="dropdown-item" href="prices.html">Пункт 2</a></li>
+                                        <li><a class="dropdown-item" href="prices.html">Пункт 3</a></li>
                                     </ul>
-                                </li> -->
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="shop.html">Каталог сайтов</a></li>
+                                <li class="nav-item"><a class="nav-link" href="cases.html">Кейсы</a></li>
+                                <li class="nav-item"><a class="nav-link" href="blog.html">Блог</a></li>
+                                <li class="nav-item"><a class="nav-link" href="promotion.html">Акции</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
+                            </ul>
+                            <ul class="socials-mobile d-lg-none list-inline mb-4 mb-lg-0">
+                                <li class="list-inline-item">
+                                    <a class="hover-opacity" href="https://t.me/+79269949870" target="_blank" rel="nofollow">
+                                        <img src="img/Telegram.svg" alt="" style="width: 32px; height: 32px;">
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="hover-opacity" href="https://wa.me/79269949870" target="_blank" rel="nofollow">
+                                        <img src="img/WhatsApp.svg" alt="" style="width: 32px; height: 32px;">
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="hover-opacity" href="https://vk.com/startsitestudio" target="_blank" rel="nofollow">
+                                        <img src="img/vk.svg" alt="" style="width: 32px; height: 32px;">
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="hover-opacity" href="https://dzen.ru/startsite" target="_blank" rel="nofollow">
+                                        <img src="img/dzen.svg" alt="" style="width: 32px; height: 32px;">
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="contacts-mobile d-lg-none nav flex-column mb-4 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link fw-600 px-0" href="tel:+74951595901">+7 (495) 159-59-01</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-600 px-0"
+                                        href="mailto:support@startsite.studio">support@startsite.studio</a>
+                                </li>
                             </ul>
                         </div>
+
+                        <div class="offcanvas-header" style="border-top: 1px solid #f5f5f5;">
+                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#mainForm">Оставить заявку</button>
+                        </div>
+
                     </div>
 
                     <a class="fw-bold text-decoration-none d-none d-xl-inline-flex ms-4" href="tel:+74951595901">+7 (495) 159-59-01</a>
@@ -116,6 +167,7 @@
                 </div>
             </nav>
         </header>
+
     </div>
 
     <!-- Контент -->
