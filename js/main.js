@@ -19,7 +19,9 @@ scrollBtn.addEventListener('click', () => {
     });
 });
 
-// Тень меню при скролле
+//////////////////////////////////////////////////////////////////
+// [ Тень меню при скролле ]
+
 window.onscroll = function() {
     const windowScroll = window.scrollY;
 	const fixedMenu = document.querySelector('.sticky-heading');
@@ -33,17 +35,6 @@ window.onscroll = function() {
 
 //////////////////////////////////////////////////////////////////
 // [ Слайдеры на странице index.html ]
-
-const heroSwiper = new Swiper('.heroSwiper', {
-    loop: true,
-    autoplay: {
-        delay: 3500,
-    },
-    navigation: {
-        nextEl: '#heroSwiper-next',
-        prevEl: '#heroSwiper-prev',
-    },
-});
 
 const portfolioSwiper = new Swiper('.portfolioSwiper', {
     effect: 'coverflow',
@@ -135,11 +126,6 @@ const relatedProducts = new Swiper('.relatedProducts', {
 });
 
 //////////////////////////////////////////////////////////////////
-// [ All Parallax ]
-
-for (var e = document.querySelectorAll('.parallax'), t = 0; t < e.length; t++) new Parallax(e[t]);
-
-//////////////////////////////////////////////////////////////////
 // [ PHONE MASK ]
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -171,9 +157,36 @@ document.addEventListener('DOMContentLoaded', function () {
 	
 });
 
+// Новый вариант
+var maskPhone = document.querySelectorAll('.maskPhone')
+var maskDate = document.querySelectorAll('.maskDate')
+
+maskPhone.forEach(function (el) {
+    IMask(el, {
+        mask: '+{7}(000)000-00-00'
+    });
+});
+
+maskDate.forEach(function (el) {
+    IMask(el, {
+        mask: Date,
+        min: new Date(1900, 0, 1),
+        lazy: false
+    });
+});
+
 //////////////////////////////////////////////////////////////////
 // [ Enable Fancybox ]
 
 Fancybox.bind("[data-fancybox]", {
-  // Your custom options
+    Thumbs: {
+        type: "classic",
+    },
+    Toolbar: {
+        display: {
+            left: [],
+            middle: [],
+            right: ["close"],
+        },
+    },
 });

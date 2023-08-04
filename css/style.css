@@ -1250,15 +1250,6 @@ ul.lh-4 > li::marker {
     --bs-link-hover-color: var(--color-blue);
 }
 
-.frontpage-hero {
-    padding-top: 5rem;
-    padding-bottom: 0;
-}
-
-.heroSwiper {
-    position: relative;
-}
-
 .swiper .btn-prev,
 .swiper .btn-next {
     --btn-icon-size: 2rem;
@@ -1774,7 +1765,7 @@ p.desc-period{
 [ MEDIA ]*/
 
 @media (min-width: 576px) {
-    
+
 	.modal-sm {
     	--bs-modal-width: 320px;
 	}
