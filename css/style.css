@@ -1,7 +1,7 @@
 /*!
 Theme: STARTSITE Black
 Author: Andrey Galkin
-Version: 1.0
+Version: 1.2
 */
 
 /*------------------------------------------------------------------
@@ -1738,6 +1738,9 @@ p.desc-period{
 
 .top-banner__title {
     color: #fff;
+    font-family: var(--ff-title);
+    font-size: 1.25rem;
+    font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 0;
 }
