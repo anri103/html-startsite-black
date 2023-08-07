@@ -55,7 +55,7 @@ Version: 1.0
     --bs-body-font-weight: var(--fw-medium);
     --bs-body-line-height: 1.5;
     --bs-body-color: var(--color-black);
-    --bs-body-bg: 246, 247, 248;
+    --bs-body-bg: #f6f7f8;
     --bs-border-color: #dee2e6;
     --bs-link-color: var(--color-black);
     --bs-link-hover-color: var(--color-blue);
@@ -1115,9 +1115,16 @@ ul.lh-4 > li::marker {
   	top: 100vh;
 }
 
-.footer .nav {
-    --bs-nav-link-color: var(--color-white);
+.widget-footer {
+    margin-bottom: 60px;
+}
+
+.footer-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0;
+    --bs-nav-link-color: var(--color-black);
     --bs-nav-link-hover-color: var(--color-blue);
+    gap: 1rem;
 }
 
 .btn-scroll-top {
