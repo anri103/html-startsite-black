@@ -63,15 +63,6 @@ const portfolioSwiper = new Swiper('.portfolioSwiper', {
     },
 });
 
-const changeclientsSwiper = new Swiper('.changeclientsSwiper', {
-    loop: true,
-    allowTouchMove: false,
-    navigation: {
-        nextEl: '#changeclientsSwiper-next',
-        prevEl: '#changeclientsSwiper-prev',
-    },
-});
-
 //////////////////////////////////////////////////////////////////
 // [ Слайдер на странице about.html ]
 
